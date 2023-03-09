@@ -14,12 +14,12 @@ const HomePage = () => {
       </div>
 
       {/* Projects Involved List */}
-      <div className="bg-white text-black rounded-t-[40px] p-[100px]">
-        <p className="monospace text-[20px] font-bold mb-[80px]">
+      <div className="bg-white text-black rounded-t-[40px] py-[100px]">
+        <p className="monospace text-[20px] font-bold mb-[80px] px-[100px]">
           Selected Projects Involved <sup>05</sup>
         </p>
-        <div className="grid lg:grid-cols-2 border-y-2">
-          <p className="flex text-[40px] uppercase py-[50px]">
+        <div className="grid lg:grid-cols-2 border-y border-[#bbb] px-[100px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+          <p className="flex text-[40px] uppercase py-[70px]">
             <b>Don't Waste</b>
             <i className="serif ml-[10px] mt-[-2.5px]">Mistakes</i>
           </p>

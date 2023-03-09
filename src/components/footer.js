@@ -6,7 +6,7 @@ export default function Footer({ children }) {
       {/* Back To Top */}
       <div className="">
         <div className="bg-[#222] w-[200px] h-[200px] rounded-[200px]">
-          <p className="text-[#CDDE91] rotate-90 pl-[80px] pt-[5px] text-[100px]">
+          <p className="text-[#CDDE91] -rotate-90 pl-[40px] pt-[5px] text-[100px]">
             ➺
           </p>
         </div>

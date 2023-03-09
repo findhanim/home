@@ -9,7 +9,7 @@ const PortfolioPage = () => {
       <Navigation></Navigation>
 
       {/* Smiley */}
-      <span className="absolute text-[#CDDE91] text-[300px] -rotate-45 ml-[-30px]">
+      <span className="absolute text-[#CDDE91] text-[300px] -rotate-45 mt-[-80px] ml-[-30px]">
         ☺
       </span>
 
