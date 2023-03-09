@@ -1,9 +1,13 @@
 import * as React from 'react'
 import Footer from '../components/footer'
+import Navigation from '../components/navigation'
 
 const AboutPage = () => {
   return (
     <main className="bg-black text-white">
+      {/* Navigation */}
+      <Navigation></Navigation>
+
       {/* Header */}
       <div className="grid lg:grid-cols-12 pt-[50px] pb-[100px] px-[100px] flex items-center">
         {/* Smiley */}
@@ -41,7 +45,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
       {/* Intro Blurp */}
       <div className="grid grid-cols-12 px-[100px] pb-[150px]">
         <div className="col-span-3 w-[150px] h-[150px] bg-[#CDDE91] rounded-[100px]">
@@ -62,7 +65,6 @@ const AboutPage = () => {
           Donec vitae justo at sapien eleifend scelerisque.
         </div>
       </div>
-
       {/* Skills */}
       <div className="bg-white text-black rounded-t-[40px] p-[100px]">
         {/* Flower */}

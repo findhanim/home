@@ -1,17 +1,20 @@
 import * as React from 'react'
 import Footer from '../components/footer'
+import Navigation from '../components/navigation'
 
 const PortfolioPage = () => {
   return (
     <main className="bg-black text-white">
-      {/* Header */}
+      {/* Navigation */}
+      <Navigation></Navigation>
 
       {/* Smiley */}
       <span className="absolute text-[#CDDE91] text-[300px] -rotate-45 ml-[-30px]">
         ☺
       </span>
 
-      <div className="grid lg:grid-cols-12 py-[250px] px-[100px] flex items-center">
+      {/* Header */}
+      <div className="grid lg:grid-cols-12 pt-[180px] pb-[200px] px-[100px] flex items-center">
         {/* Hello */}
         <div className="col-span-2"></div>
         <div className="lg:col-span-8">

@@ -1,11 +1,15 @@
 import * as React from 'react'
 import Footer from '../components/footer'
+import Navigation from '../components/navigation'
 
 const HomePage = () => {
   return (
     <main className="bg-black text-white">
+      {/* Navigation */}
+      <Navigation></Navigation>
+
       {/* Header */}
-      <div className="py-[150px] flex justify-center text-[#CDDE91] text-[300px]">
+      <div className="pt-[100px] pb-[150px] flex justify-center text-[#CDDE91] text-[300px]">
         ☺
       </div>
 
