@@ -23,8 +23,6 @@ const HomePage = () => {
             Read more ➚
           </p>
         </div>
-
-        <p>(c) 2023</p>
       </div>
 
       {/* Playground List */}
