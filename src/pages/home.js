@@ -1,10 +1,6 @@
 import * as React from 'react'
 import Footer from '../components/footer'
 import Navigation from '../components/navigation'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
-AOS.init()
 
 const HomePage = () => {
   return (
