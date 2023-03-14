@@ -9,12 +9,12 @@ const PortfolioPage = () => {
       <Navigation></Navigation>
 
       {/* Smiley */}
-      <span className="absolute text-[#CDDE91] text-[300px] -rotate-45 mt-[-80px] ml-[-30px]">
+      <span className="absolute lg:block hidden text-[#CDDE91] text-[300px] -rotate-45 mt-[-80px] ml-[-30px]">
         ☺
       </span>
 
       {/* Header */}
-      <div className="grid lg:grid-cols-12 pt-[180px] pb-[200px] px-[100px] flex items-center">
+      <div className="grid lg:grid-cols-12 lg:pt-[180px] lg:pb-[200px] py-[100px] lg:px-[100px] px-[40px] flex items-center">
         {/* Hello */}
         <div className="col-span-2"></div>
         <div className="lg:col-span-8">
@@ -35,7 +35,7 @@ const PortfolioPage = () => {
       </div>
 
       {/* Flower */}
-      <span className="absolute text-[#CDDE91] text-[120px] -rotate-45 mt-[-200px] ml-[1200px]">
+      <span className="absolute lg:block hidden text-[#CDDE91] text-[120px] -rotate-45 mt-[-200px] ml-[1200px]">
         ❋
       </span>
 

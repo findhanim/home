@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Footer({ children }) {
   return (
-    <main className="grid lg:grid-cols-2 p-[100px]">
+    <main className="grid lg:grid-cols-2 py-[100px] lg:px-[100px] px-[40px]">
       {/* Back To Top */}
-      <div className="">
+      <div className="mb-[70px]">
         <div className="bg-[#222] w-[200px] h-[200px] rounded-[200px]">
           <p className="text-[#CDDE91] -rotate-90 pl-[40px] pt-[5px] text-[100px]">
             ➺
