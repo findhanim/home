@@ -16,6 +16,10 @@ body {
   font-family: "Playfair Display";
 }
 
+#portfolio a:hover {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: underline;
 }

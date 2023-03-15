@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Footer from '../components/footer'
 import Navigation from '../components/navigation'
+import { Link } from 'gatsby'
 
 const HomePage = () => {
   return (
@@ -17,19 +18,37 @@ const HomePage = () => {
       </div>
 
       {/* Projects Involved List */}
-      <div className="bg-white text-black rounded-t-[40px] py-[100px]">
+      <div
+        id="portfolio"
+        className="bg-white text-black rounded-t-[40px] py-[100px]"
+      >
         <p className="monospace text-[20px] font-bold mb-[80px] lg:px-[100px] px-[40px]">
           Selected Projects Involved <sup>05</sup>
         </p>
-        <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
-          <p className="flex text-[40px] uppercase py-[70px]">
-            <b>Don't Waste</b>
-            <i className="serif ml-[10px] mt-[-2.5px]">Mistakes</i>
-          </p>
-          <p className="flex items-center justify-end monospace text-[12px] font-bold uppercase">
-            Read more ➚
-          </p>
-        </div>
+        {/* Portfolio One */}
+        <Link to="/portfolio/one">
+          <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+            <p className="flex text-[40px] uppercase py-[70px]">
+              <b>Project</b>
+              <i className="serif ml-[10px] mt-[-2.5px]">One</i>
+            </p>
+            <p className="flex items-center justify-end monospace text-[12px] font-bold uppercase">
+              Read more ➚
+            </p>
+          </div>
+        </Link>
+        {/* Portfolio Two */}
+        <Link to="/portfolio/two">
+          <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+            <p className="flex text-[40px] uppercase py-[70px]">
+              <b>Project</b>
+              <i className="serif ml-[10px] mt-[-2.5px]">Two</i>
+            </p>
+            <p className="flex items-center justify-end monospace text-[12px] font-bold uppercase">
+              Read more ➚
+            </p>
+          </div>
+        </Link>
       </div>
 
       {/* Playground List */}

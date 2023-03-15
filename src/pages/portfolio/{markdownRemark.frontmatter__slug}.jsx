@@ -4,6 +4,7 @@ import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
 
 export default function BlogPostTemplate({
+  item,
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
@@ -28,10 +29,15 @@ export default function BlogPostTemplate({
             {frontmatter.description}
           </p>
           <p className="mt-[40px] text-[12px] uppercase">
-            <a className="mr-[12px]">UI/UX Design</a> ☻
-            <a className="ml-[12px]">Front End Development</a>
+            {frontmatter.items.map((item) => (
+              <a key={item.value} className="mr-[12px]">
+                {item.value}
+              </a>
+            ))}
           </p>
         </div>
+
+        <div dangerouslySetInnerHTML={{ __html: html }} />
 
         <div className="col-span-2"></div>
       </div>
@@ -66,6 +72,9 @@ export const pageQuery = graphql`
         slug
         title
         description
+        items {
+          value
+        }
       }
     }
   }
