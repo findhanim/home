@@ -2,9 +2,10 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
+import Img from "gatsby-image";
+import testImg from "../../images/header.png";
 
 export default function BlogPostTemplate({
-  item,
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
@@ -47,19 +48,15 @@ export default function BlogPostTemplate({
         ❋
       </span>
 
-      {/* Skills */}
-      <div className="bg-white text-black rounded-t-[40px] px-[100px] py-[200px]"></div>
+      {/* Screenshots */}
+      <div className="bg-white text-black rounded-t-[40px] py-[200px]">
+        {/* <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} /> */}
+        <img src={testImg} />
+      </div>
 
       {/* Footer */}
       <Footer></Footer>
     </main>
-    // <div>
-    //   <div>
-    //     <h1>{frontmatter.title}</h1>
-    //     <h2>{frontmatter.date}</h2>
-    //     <div dangerouslySetInnerHTML={{ __html: html }} />
-    //   </div>
-    // </div>
   );
 }
 

@@ -13,5 +13,14 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     'gatsby-plugin-postcss',
+    `gatsby-plugin-sharp`,
+    `gatsby-remark-images`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
   ],
 }
