@@ -1,11 +1,14 @@
 ---
 slug: "/one"
-date: "2022-11-24"
-title: "My first blog post"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mauris elit, a accumsan dolor cursus quis. Cras quis justo nec nibh hendrerit tempus a id ante. Nam lectus augue, ultricies sit amet velit quis, gravida tincidunt orci."
+title: "Daily UI Challenges"
+description: "Daily UI is a series of daily design challenges for website and mobile interface. Once signed up, a series of emails prompting various user interface themes will be sent to you daily, for 100 days. So, here are the challenges I have finished for the first 10 days."
 involvements:
-  - role: UI/UX Design
-  - role: Front End Development
+  - role: Conceptual Design
+  - role: UI Design
 featuredImages:
-  - image: sunset.png
+  - image: images/dui-1.png
+  - image: images/dui-2.png
+  - image: images/dui-3.png
+  - image: images/dui-4.png
+  - image: images/dui-5.png
 ---

@@ -6,6 +6,6 @@ description: "Nam lectus augue, ultricies sit amet velit quis, gravida tincidunt
 involvements:
   - role: UI/UX Design
 featuredImages:
-  - image: header.png
-  - image: sunset.png
+  - image: images/header.png
+  - image: images/sunset.png
 ---
