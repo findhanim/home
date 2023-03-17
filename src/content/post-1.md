@@ -6,5 +6,6 @@ description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fini
 items:
   - value: UI/UX Design
   - value: Front End Development
-featuredImage: sunset.png
+featuredImages:
+  - image: sunset.png
 ---

@@ -4,7 +4,8 @@ import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
 
 export default function BlogPostTemplate({
-  data, // this prop will be injected by the GraphQL query below.
+  data,
+  featuredImages, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
@@ -28,6 +29,9 @@ export default function BlogPostTemplate({
         {/* Hello */}
         <div className="col-span-2"></div>
         <div className="lg:col-span-8">
+          {/* <p className="serif text-[28px] text-[#CDDE91] font-light pb-[50px] font-bold uppercase">
+            {frontmatter.title}
+          </p> */}
           <p className="monospace text-[12px] uppercase">About The Project</p>
           <p className="text-[28px] font-light pt-[30px]">
             {frontmatter.description}
@@ -41,8 +45,6 @@ export default function BlogPostTemplate({
           </p>
         </div>
 
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-
         <div className="col-span-2"></div>
       </div>
 
@@ -52,8 +54,10 @@ export default function BlogPostTemplate({
       </span>
 
       {/* Screenshots */}
-      <div className="bg-white text-black rounded-t-[40px] py-[200px]">
-        <img alt="test" src={post.frontmatter.featuredImage.publicURL} />
+      <div className="bg-white text-black rounded-t-[40px] pt-[200px]">
+        {frontmatter.featuredImages.map((image) => (
+          <img src={image.image.publicURL} />
+        ))}
       </div>
 
       {/* Footer */}
@@ -73,8 +77,10 @@ export const pageQuery = graphql`
         items {
           value
         }
-        featuredImage {
-          publicURL
+        featuredImages {
+          image {
+            publicURL
+          }
         }
       }
     }
