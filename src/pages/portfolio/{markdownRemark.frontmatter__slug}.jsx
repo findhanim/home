@@ -2,14 +2,17 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
-import Img from "gatsby-image";
-import testImg from "../../images/header.png";
 
 export default function BlogPostTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
+
+  let post = data.markdownRemark;
+
+  console.log("HEREEEE", frontmatter);
+
   return (
     <main className="bg-black text-white">
       {/* Navigation */}
@@ -50,8 +53,7 @@ export default function BlogPostTemplate({
 
       {/* Screenshots */}
       <div className="bg-white text-black rounded-t-[40px] py-[200px]">
-        {/* <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} /> */}
-        <img src={testImg} />
+        <img alt="test" src={post.frontmatter.featuredImage.publicURL} />
       </div>
 
       {/* Footer */}
@@ -63,7 +65,6 @@ export default function BlogPostTemplate({
 export const pageQuery = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
@@ -71,6 +72,9 @@ export const pageQuery = graphql`
         description
         items {
           value
+        }
+        featuredImage {
+          publicURL
         }
       }
     }
