@@ -37,9 +37,9 @@ export default function BlogPostTemplate({
             {frontmatter.description}
           </p>
           <p className="mt-[40px] text-[12px] uppercase">
-            {frontmatter.items.map((item) => (
-              <a key={item.value} className="mr-[12px]">
-                {item.value}
+            {frontmatter.involvements.map((item) => (
+              <a key={item.role} className="mr-[16px]">
+                {item.role}
               </a>
             ))}
           </p>
@@ -55,8 +55,8 @@ export default function BlogPostTemplate({
 
       {/* Screenshots */}
       <div className="bg-white text-black rounded-t-[40px] pt-[200px]">
-        {frontmatter.featuredImages.map((image) => (
-          <img src={image.image.publicURL} />
+        {frontmatter.featuredImages.map((item) => (
+          <img src={item.image.publicURL} />
         ))}
       </div>
 
@@ -74,8 +74,8 @@ export const pageQuery = graphql`
         slug
         title
         description
-        items {
-          value
+        involvements {
+          role
         }
         featuredImages {
           image {
