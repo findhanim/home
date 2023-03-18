@@ -25,10 +25,10 @@ export default function Footer({ children }) {
         {/* Email */}
         <p className="monospace text-[12px] uppercase mt-[70px]">Find Me On</p>
         <p className="grid grid-cols-4 text-[20px] mt-[6px]">
-          <a href="#">Codepen</a>
-          <a href="#">Behance</a>
-          <a href="#">Dribbble</a>
-          <a href="#">LinkedIn</a>
+          <a href="https://codepen.io/nazreenhanim">Codepen</a>
+          <a href="https://www.behance.net/nazreenhanim">Behance</a>
+          <a href="https://dribbble.com/nazreenhanim">Dribbble</a>
+          <a href="https://www.linkedin.com/in/nazreenhanim">LinkedIn</a>
         </p>
       </div>
     </main>

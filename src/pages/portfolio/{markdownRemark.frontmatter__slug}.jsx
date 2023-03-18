@@ -54,7 +54,7 @@ export default function BlogPostTemplate({
       </span>
 
       {/* Screenshots */}
-      <div className="bg-white text-black rounded-t-[40px] pt-[200px]">
+      <div className="bg-white text-black rounded-t-[40px] pt-[100px]">
         {frontmatter.featuredImages.map((item) => (
           <img src={item.image.publicURL} />
         ))}
