@@ -32,7 +32,7 @@ const HomePage = () => {
               <b>Daily UI</b>
               <i className="serif ml-[10px] mt-[-2.5px]">Challenges</i>
             </p>
-            <p className="hidden lg:block flex items-center justify-end monospace text-[12px] font-bold uppercase">
+            <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
             </p>
           </div>
@@ -43,7 +43,7 @@ const HomePage = () => {
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Beige</b>
             </p>
-            <p className="hidden lg:block flex items-center justify-end monospace text-[12px] font-bold uppercase">
+            <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
             </p>
           </div>
@@ -55,7 +55,7 @@ const HomePage = () => {
               <b>Boxy</b>
               <i className="serif ml-[10px] mt-[-2.5px]">Shapes</i>
             </p>
-            <p className="hidden lg:block flex items-center justify-end monospace text-[12px] font-bold uppercase">
+            <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
             </p>
           </div>

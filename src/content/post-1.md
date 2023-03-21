@@ -1,11 +1,11 @@
 ---
 slug: "/one"
 title: "Daily UI Challenges"
-description: "Daily UI is a series of daily design challenges for website and mobile interface. Once signed up, a series of emails prompting various user interface themes were sent out daily, for 100 days. So, here are the challenges I have finished for the first 10 days."
+description: "Daily UI prompts are designed to challenge participants to think creatively and improve design skills in areas such as typography, color theory, layout, and user experience design."
 
 contributions:
   - role: Conceptual Design
-  - role: UI Design
+  - role: UI/UX Design
 
 technologies:
   - tool: Adobe XD

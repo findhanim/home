@@ -2,8 +2,8 @@
 slug: "/two"
 date: "2022-11-24"
 title: "Beige"
-description: "Beige is a collaborative work between myself and Tumblr theme developer. I was proposed to work on the interface design for both desktop and mobile previews for this project. We settled on a minimal theme to gives off a youthful and modern look.
-"
+description: "Beige gives off a minimal and youthful look, which would be a great choice for Tumblr users who want to showcase their content in a modern way that feels clean and fun."
+
 contributions:
   - role: Responsive UI Design
 

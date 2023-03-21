@@ -2,7 +2,7 @@
 slug: "/three"
 date: "2022-11-24"
 title: "BoxyShapes"
-description: "BoxyShapes is bla bla bla.
+description: "BoxyShapes aids early childhood learning on basic shape and geometry, with interactive augmented reality environment through mobile learning.
 "
 contributions:
   - role: UI/UX Design
