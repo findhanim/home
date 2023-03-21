@@ -5,12 +5,10 @@ import Footer from "../../components/footer";
 
 export default function BlogPostTemplate({
   data,
-  featuredImages, // this prop will be injected by the GraphQL query below.
+  // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
-
-  let post = data.markdownRemark;
+  const { frontmatter } = markdownRemark;
 
   console.log("HEREEEE", frontmatter);
 

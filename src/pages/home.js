@@ -39,7 +39,7 @@ const HomePage = () => {
         </Link>
         {/* Portfolio Two */}
         <Link to="/portfolio/two">
-          <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+          <div className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Beige</b>
             </p>
@@ -50,7 +50,7 @@ const HomePage = () => {
         </Link>
         {/* Portfolio Three */}
         <Link to="/portfolio/three">
-          <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+          <div className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Boxy</b>
               <i className="serif ml-[10px] mt-[-2.5px]">Shapes</i>

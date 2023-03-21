@@ -11,7 +11,7 @@ const AboutPage = () => {
       {/* Header */}
       <div className="grid lg:grid-cols-12 lg:pt-[50px] py-[100px] lg:px-[100px] px-[40px] flex items-center">
         {/* Smiley */}
-        <span className="absolute lg:block hidden text-[#CDDE91] text-[100px] rotate-45 mt-[-350px] ml-[-30px]">
+        <span className="absolute lg:block hidden text-[#CDDE91] text-[100px] rotate-45 mt-[-370px] ml-[-30px]">
           ☺
         </span>
 
@@ -24,7 +24,7 @@ const AboutPage = () => {
             <b className="font-bold text-[#CDDE91]">Nazreen Hanim</b> — UI/UX
             designer and front end developer based in Malaysia.
           </p>
-          <button className="mt-[24px] py-[12px] px-[24px] border rounded-[50px] text-[12px] uppercase">
+          <button className="mt-[32px] py-[12px] px-[40px] border rounded-[50px] text-[12px] uppercase hover:bg-gradient-to-r from-white to-[#CDDE90] hover:text-black hover:border-black font-bold">
             Click For Resume
           </button>
         </div>
@@ -56,14 +56,13 @@ const AboutPage = () => {
           <br /> regarding the latter
         </div>
         <div className="lg:mt-[0px] mt-[50px] col-span-6 text-[28px] leading-[44px] font-light">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus
-          mauris elit, a accumsan dolor cursus quis. Cras quis justo nec nibh
-          hendrerit tempus a id ante. Nam lectus augue, ultricies sit amet velit
-          quis, gravida tincidunt orci. Vivamus et velit vel lorem posuere
-          tempus. <br />
+          I have been fiddling with user interface design and development on and
+          off since 2010, with Blogger and Tumblr as my platforms of choice.
           <br />
-          Phasellus at velit in dolor euismod placerat. Nunc non magna eros.
-          Donec vitae justo at sapien eleifend scelerisque.
+          <br />
+          2019, marks the year of me start delivering my skill set and versatile
+          services professionally, from conceptual ideation to production in
+          both creative and technical areas.
         </div>
       </div>
       {/* Skills */}
@@ -77,14 +76,35 @@ const AboutPage = () => {
           Skills In The Field <sup>03</sup>
         </p>
         {/* Skill 1 */}
-        <div className="grid lg:grid-cols-12 border-y-2 py-[50px]">
-          <p className="flex col-span-8 text-[30px] pb-[20px] lg:py-[50px] font-semibold">
+        <div className="grid lg:grid-cols-2 border-y-2 py-[50px]">
+          <div className="text-[30px] pb-[20px] lg:py-[40px] font-semibold">
+            UI/UX Design
+          </div>
+          <div className="flex grid grid-cols-1 items-center justify-end">
+            <i className="text-[12px] monospace uppercase mt-[10px] lg:mt-[0px]">
+              Tools and technologies
+            </i>
+            <p className="text-[16px] leading-[24px mt-[12px] lg:mt-[-30px]">
+              Figma, Adobe XD, Invision, Adobe Photoshop, Adobe Illustrator,
+              WordPress, Webflow
+            </p>
+          </div>
+        </div>
+
+        {/* Skill 2 */}
+        <div className="grid lg:grid-cols-2 border-b-2 py-[50px]">
+          <div className="text-[30px] pb-[20px] lg:py-[40px] font-semibold">
             Front End Development
-          </p>
-          <p className="flex col-span-4 items-center justify-end text-[16px] leading-[24px]">
-            Nam lectus augue, ultricies sit amet velit quis, gravida tincidunt
-            orci. Vivamus et velit vel lorem posuere tempus.
-          </p>
+          </div>
+          <div className="flex grid grid-cols-1 items-center justify-end">
+            <i className="text-[12px] monospace uppercase mt-[10px] lg:mt-[0px]">
+              Tools and technologies
+            </i>
+            <p className="text-[16px] leading-[24px mt-[12px] lg:mt-[-30px]">
+              Bootstrap, Tailwind, Animate.CSS, GatsbyJS, Angular, NextJS,
+              Ionic, React Native, Strapi CMS
+            </p>
+          </div>
         </div>
       </div>
 
