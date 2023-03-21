@@ -16,6 +16,6 @@ pages:
     - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
-      - src
+      - public
   only:
     - master
