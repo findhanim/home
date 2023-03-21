@@ -28,11 +28,11 @@ const HomePage = () => {
         {/* Portfolio One */}
         <Link to="/portfolio/one">
           <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
-            <p className="flex text-[40px] uppercase py-[70px]">
+            <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Daily UI</b>
               <i className="serif ml-[10px] mt-[-2.5px]">Challenges</i>
             </p>
-            <p className="flex items-center justify-end monospace text-[12px] font-bold uppercase">
+            <p className="hidden lg:block flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
             </p>
           </div>
@@ -40,10 +40,22 @@ const HomePage = () => {
         {/* Portfolio Two */}
         <Link to="/portfolio/two">
           <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
-            <p className="flex text-[40px] uppercase py-[70px]">
+            <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Beige</b>
             </p>
-            <p className="flex items-center justify-end monospace text-[12px] font-bold uppercase">
+            <p className="hidden lg:block flex items-center justify-end monospace text-[12px] font-bold uppercase">
+              Read more ➚
+            </p>
+          </div>
+        </Link>
+        {/* Portfolio Three */}
+        <Link to="/portfolio/three">
+          <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+            <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
+              <b>Boxy</b>
+              <i className="serif ml-[10px] mt-[-2.5px]">Shapes</i>
+            </p>
+            <p className="hidden lg:block flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
             </p>
           </div>

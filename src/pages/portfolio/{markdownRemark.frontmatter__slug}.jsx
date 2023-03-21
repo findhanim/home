@@ -32,15 +32,29 @@ export default function BlogPostTemplate({
           {/* <p className="serif text-[28px] text-[#CDDE91] font-light pb-[50px] font-bold uppercase">
             {frontmatter.title}
           </p> */}
-          <p className="monospace text-[12px] uppercase">About The Project</p>
-          <p className="text-[28px] font-light pt-[30px]">
-            {frontmatter.description}
+          <p className="text-[28px] font-light">{frontmatter.description}</p>
+
+          {/* Roles */}
+          <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[11px] uppercase">
+            Contributions
           </p>
-          <p className="mt-[40px] text-[12px] uppercase">
-            {frontmatter.involvements.map((item) => (
-              <a key={item.role} className="mr-[16px]">
+          <p className=" text-[12px] uppercase">
+            {frontmatter.contributions.map((item) => (
+              <b key={item.role} className="mr-[16px]">
                 {item.role}
-              </a>
+              </b>
+            ))}
+          </p>
+
+          {/* Tools */}
+          <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[11px] uppercase">
+            Tools and technologies
+          </p>
+          <p className=" text-[12px] uppercase">
+            {frontmatter.technologies.map((item) => (
+              <b key={item.tool} className="mr-[16px]">
+                {item.tool}
+              </b>
             ))}
           </p>
         </div>
@@ -54,9 +68,9 @@ export default function BlogPostTemplate({
       </span>
 
       {/* Screenshots */}
-      <div className="bg-white text-black rounded-t-[40px] pt-[100px]">
+      <div className="text-black rounded-t-[40px] py-[0px] lg:py-[50px]">
         {frontmatter.featuredImages.map((item) => (
-          <img src={item.image.publicURL} />
+          <img id="shot" src={item.image.publicURL} />
         ))}
       </div>
 
@@ -74,8 +88,11 @@ export const pageQuery = graphql`
         slug
         title
         description
-        involvements {
+        contributions {
           role
+        }
+        technologies {
+          tool
         }
         featuredImages {
           image {

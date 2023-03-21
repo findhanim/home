@@ -78,7 +78,7 @@ const AboutPage = () => {
         </p>
         {/* Skill 1 */}
         <div className="grid lg:grid-cols-12 border-y-2 py-[50px]">
-          <p className="flex col-span-8 text-[30px] py-[50px] font-semibold">
+          <p className="flex col-span-8 text-[30px] pb-[20px] lg:py-[50px] font-semibold">
             Front End Development
           </p>
           <p className="flex col-span-4 items-center justify-end text-[16px] leading-[24px]">
