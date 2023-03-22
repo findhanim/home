@@ -3,7 +3,7 @@ import Footer from '../components/footer'
 import Navigation from '../components/navigation'
 import { Link } from 'gatsby'
 
-const HomePage = () => {
+const IndexPage = () => {
   return (
     <main className="bg-black text-white">
       {/* Navigation */}
@@ -80,6 +80,6 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default IndexPage
 
 export const Head = () => <title>Hanim</title>

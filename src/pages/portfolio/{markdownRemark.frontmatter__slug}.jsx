@@ -33,24 +33,24 @@ export default function BlogPostTemplate({
           <p className="text-[28px] font-light">{frontmatter.description}</p>
 
           {/* Roles */}
-          <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[11px] uppercase">
+          <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[12px] uppercase">
             Contributions
           </p>
-          <p className=" text-[12px] uppercase">
+          <p className=" text-[13px] uppercase">
             {frontmatter.contributions.map((item) => (
-              <b key={item.role} className="mr-[16px]">
+              <b key={item.role} className="mr-[20px]">
                 {item.role}
               </b>
             ))}
           </p>
 
           {/* Tools */}
-          <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[11px] uppercase">
+          <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[12px] uppercase">
             Tools and technologies
           </p>
-          <p className=" text-[12px] uppercase">
+          <p className=" text-[13px] uppercase">
             {frontmatter.technologies.map((item) => (
-              <b key={item.tool} className="mr-[16px]">
+              <b key={item.tool} className="mr-[20px]">
                 {item.tool}
               </b>
             ))}
