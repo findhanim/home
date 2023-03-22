@@ -8,7 +8,7 @@ cache:
     # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
     - .cache/
     - public/
-    
+
 pages:
   stage: deploy
   script:
@@ -16,6 +16,6 @@ pages:
     - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
-      - public
+      - src
   only:
     - master
