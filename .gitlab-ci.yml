@@ -12,7 +12,7 @@ cache:
 pages:
   stage: deploy
   script:
-    - npm install --legacy-peer-deps
+    - npm install --force
     - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
