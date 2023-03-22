@@ -1,8 +1,6 @@
 module.exports = {
-  siteMetadata: {
-    title: `testwind`,
-    siteUrl: `https://www.yourdomain.tld`,
-  },
+  pathPrefix: `/findhanim`,
+
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
