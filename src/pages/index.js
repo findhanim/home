@@ -2,6 +2,9 @@ import * as React from 'react'
 import Footer from '../components/footer'
 import Navigation from '../components/navigation'
 import { Link } from 'gatsby'
+import shot1 from '../content/images/dui-1.png'
+import shot2 from '../content/images/beige-1.png'
+import shot3 from '../content/images/boxyshapes-1.png'
 
 const IndexPage = () => {
   return (
@@ -27,7 +30,10 @@ const IndexPage = () => {
         </p>
         {/* Portfolio One */}
         <Link to="/portfolio/one">
-          <div className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+          <div
+            id="project-list"
+            className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+          >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Daily UI Challenges</b>
               {/* <i className="serif ml-[10px] mt-[-2.5px]">Challenges</i> */}
@@ -36,10 +42,18 @@ const IndexPage = () => {
               Read more ➚
             </p>
           </div>
+          {/* Screenshot One */}
+          <div className="project-hover hidden lg:block">
+            <img alt="test" src={shot1} />
+          </div>
         </Link>
+
         {/* Portfolio Two */}
         <Link to="/portfolio/two">
-          <div className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+          <div
+            id="project-list"
+            className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+          >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Beige</b>
             </p>
@@ -47,16 +61,28 @@ const IndexPage = () => {
               Read more ➚
             </p>
           </div>
+          {/* Screenshot Two */}
+          <div className="project-hover hidden lg:block">
+            <img alt="test" src={shot2} />
+          </div>
         </Link>
+
         {/* Portfolio Three */}
         <Link to="/portfolio/three">
-          <div className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]">
+          <div
+            id="project-list"
+            className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+          >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>BoxyShapes</b>
             </p>
             <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
             </p>
+          </div>
+          {/* Screenshot Three */}
+          <div className="project-hover hidden lg:block">
+            <img alt="test" src={shot3} />
           </div>
         </Link>
       </div>

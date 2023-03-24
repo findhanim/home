@@ -8,22 +8,42 @@ body {
   font-family: "Archivo";
 }
 
+/* Global Styling */
 .monospace {
   font-family: "Space Mono";
 }
-
 .serif {
   font-family: "Playfair Display";
 }
-
-#portfolio a:hover {
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: underline;
 }
 
+/* Selected Projects List */
+#portfolio a:hover {
+  text-decoration: none;
+}
+
+#project-list + .project-hover {
+  position: absolute;
+  max-width: 500px;
+  margin-top: -18%;
+  margin-left: 30%;
+  transform: skewX(-16deg);
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+#project-list:hover + .project-hover {
+  margin-left: 45%;
+  transform: skewX(0deg);
+  opacity: 1;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+/* Portfolio Page*/
 #shot:nth-child(1) {
   border-radius: 50px 50px 0px 0px;
 }
