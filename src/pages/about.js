@@ -11,16 +11,16 @@ const AboutPage = () => {
       {/* Header */}
       <div className="grid lg:grid-cols-12 lg:pt-[50px] py-[100px] lg:px-[100px] px-[40px] flex items-center">
         {/* Smiley */}
-        <span className="absolute lg:block hidden text-[#CDDE91] text-[100px] rotate-45 mt-[-370px] ml-[-30px]">
+        <span className="absolute lg:block hidden text-[#CDDE91] text-[100px] rotate-45 mt-[-420px] ml-[-40px]">
           ☺
         </span>
 
         {/* Hello */}
-        <div className="lg:col-span-5 col-span-12">
+        <div className="lg:col-span-5 col-span-12 mt-[10px]">
           <p className="monospace text-[12px] uppercase">
             Let's get to know me
           </p>
-          <p className="text-[28px] font-light pt-[30px]">
+          <p className="text-[40px] font-light pt-[30px] leading-[55px]">
             <b className="font-bold text-[#CDDE91]">Nazreen Hanim</b> — UI/UX
             designer and front end developer based in Malaysia.
           </p>
