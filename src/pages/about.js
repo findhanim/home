@@ -68,7 +68,10 @@ const AboutPage = () => {
       {/* Skills */}
       <div className="bg-white text-black rounded-t-[40px] py-[100px] lg:px-[100px] px-[40px]">
         {/* Flower */}
-        <span className="flex lg:block hidden justify-end absolute text-[#CDDE91] text-[300px] rotate-12 mt-[-320px] ml-[1030px]">
+        <span
+          id="flower2"
+          className="flex lg:block hidden justify-end absolute text-[#CDDE91] text-[300px] rotate-12 mt-[-320px] ml-[1030px]"
+        >
           ✺
         </span>
 

@@ -30,45 +30,58 @@ export default function BlogPostTemplate({
           {/* <p className="serif text-[28px] text-[#CDDE91] font-light pb-[50px] font-bold uppercase">
             {frontmatter.title}
           </p> */}
-          <p className="text-[28px] font-light">{frontmatter.description}</p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="text-[28px] font-light"
+          >
+            {frontmatter.description}
+          </p>
 
           {/* Roles */}
-          <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[12px] uppercase">
-            Contributions
-          </p>
-          <p className=" text-[13px] uppercase">
-            {frontmatter.contributions.map((item) => (
-              <b key={item.role} className="mr-[20px]">
-                {item.role}
-              </b>
-            ))}
-          </p>
+          <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+            <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[12px] uppercase">
+              Contributions
+            </p>
+            <p className=" text-[13px] uppercase">
+              {frontmatter.contributions.map((item) => (
+                <b key={item.role} className="mr-[20px]">
+                  {item.role}
+                </b>
+              ))}
+            </p>
+          </div>
 
           {/* Tools */}
-          <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[12px] uppercase">
-            Tools and technologies
-          </p>
-          <p className=" text-[13px] uppercase">
-            {frontmatter.technologies.map((item) => (
-              <b key={item.tool} className="mr-[20px]">
-                {item.tool}
-              </b>
-            ))}
-          </p>
+          <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+            <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[12px] uppercase">
+              Tools and technologies
+            </p>
+            <p className=" text-[13px] uppercase">
+              {frontmatter.technologies.map((item) => (
+                <b key={item.tool} className="mr-[20px]">
+                  {item.tool}
+                </b>
+              ))}
+            </p>
+          </div>
         </div>
 
         <div className="col-span-2"></div>
       </div>
 
       {/* Flower */}
-      <span className="absolute lg:block hidden text-[#CDDE91] text-[120px] -rotate-45 mt-[-200px] ml-[1200px]">
+      <span
+        id="flower"
+        className="absolute lg:block hidden text-[#CDDE91] text-[120px] -rotate-45 mt-[-200px] ml-[1200px]"
+      >
         ❋
       </span>
 
       {/* Screenshots */}
-      <div className="text-black rounded-t-[40px] py-[0px] lg:py-[50px]">
+      <div className="py-[0px] lg:py-[50px]">
         {frontmatter.featuredImages.map((item) => (
-          <img id="shot" src={item.image.publicURL} />
+          <img alt="img" id="shot" src={item.image.publicURL} />
         ))}
       </div>
 

@@ -26,24 +26,42 @@ a:hover {
 
 #project-list + .project-hover {
   position: absolute;
-  max-width: 500px;
-  margin-top: -18%;
+  max-width: 480px;
+  margin-top: -17%;
   margin-left: 30%;
   transform: skewX(-16deg);
   opacity: 0;
-  transition: 0.4s;
-  z-index: -1;
+  transition: 0.6s;
+  /* z-index: -1; */
 }
 
 #project-list:hover + .project-hover {
-  margin-left: 45%;
+  margin-left: 47%;
   transform: skewX(0deg);
   opacity: 1;
-  transition: 0.4s;
-  z-index: 1;
+  transition: 0.6s;
+  /* z-index: 1; */
 }
 
 /* Portfolio Page*/
 #shot:nth-child(1) {
   border-radius: 50px 50px 0px 0px;
+}
+
+/* Flower */
+#flower {
+  animation: rotation 3s linear infinite;
+}
+
+#flower2 {
+  animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

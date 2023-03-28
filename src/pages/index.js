@@ -15,6 +15,7 @@ const IndexPage = () => {
       {/* Header */}
       <div
         data-aos="flip-left"
+        data-aos-duration="800"
         className="pt-[100px] pb-[150px] flex justify-center text-[#CDDE91] text-[300px]"
       >
         ☺
@@ -43,9 +44,11 @@ const IndexPage = () => {
             </p>
           </div>
           {/* Screenshot One */}
-          <div className="project-hover hidden lg:block">
-            <img alt="test" src={shot1} />
-          </div>
+          <img
+            className="project-hover hidden lg:block"
+            alt="img"
+            src={shot1}
+          />
         </Link>
 
         {/* Portfolio Two */}
@@ -62,9 +65,11 @@ const IndexPage = () => {
             </p>
           </div>
           {/* Screenshot Two */}
-          <div className="project-hover hidden lg:block">
-            <img alt="test" src={shot2} />
-          </div>
+          <img
+            className="project-hover hidden lg:block"
+            alt="img"
+            src={shot2}
+          />
         </Link>
 
         {/* Portfolio Three */}
@@ -81,9 +86,11 @@ const IndexPage = () => {
             </p>
           </div>
           {/* Screenshot Three */}
-          <div className="project-hover hidden lg:block">
-            <img alt="test" src={shot3} />
-          </div>
+          <img
+            className="project-hover hidden lg:block"
+            alt="img"
+            src={shot3}
+          />
         </Link>
       </div>
 
