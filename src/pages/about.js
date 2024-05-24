@@ -1,6 +1,9 @@
 import * as React from "react";
+// Components
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
+// Assets
+import Beige from "../assets/me.jpg";
 
 const AboutPage = () => {
   return (
@@ -17,9 +20,7 @@ const AboutPage = () => {
 
         {/* Hello */}
         <div className="lg:col-span-5 col-span-12 mt-[10px]">
-          <p className="monospace text-[12px] uppercase">
-            Let's get to know me
-          </p>
+          <p className="monospace text-[12px] uppercase">Who am i again ?</p>
           <p className="text-[40px] font-light pt-[30px] leading-[55px]">
             A unicorn who's passionate in blending artistic vision with
             innovative solution
@@ -48,8 +49,10 @@ const AboutPage = () => {
       </div>
       {/* Intro Blurp */}
       <div className="grid lg:grid-cols-12 lg:px-[100px] px-[40px] pb-[150px]">
-        <div className="col-span-3 w-[150px] h-[150px] bg-[#CDDE91] rounded-t-[100px] rounded-b-[10px]">
-          <div className="col-span-3 w-[130px] h-[130px] bg-[#CDDE91] rounded-t-[100px] rounded-b-[10px] border border-[#171717] m-[10px]"></div>
+        <div className="col-span-3 w-[200px] h-[220px] bg-[#CDDE91] rounded-t-[120px] rounded-b-[10px]">
+          <div className="overflow-hidden col-span-3 w-[180px] h-[200px] bg-[#CDDE91] rounded-t-[150px] rounded-b-[10px] border border-[#171717] m-[10px]">
+            <img className="object-cover h-full w-full" alt="img" src={Beige} />
+          </div>
         </div>
         <div className="flex items-end lg:items-start col-span-3 monospace text-[12px] leading-[22px] uppercase">
           A little blurp

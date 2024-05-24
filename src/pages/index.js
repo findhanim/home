@@ -1,9 +1,11 @@
 import * as React from "react";
+import { Link } from "gatsby";
+// Components
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
-import { Link } from "gatsby";
-import Prisma from "../content/images/prisma-0.png";
+// Assets
 import Retro from "../content/images/retrospective-0.png";
+import Prisma from "../content/images/prisma-0.png";
 import Beige from "../content/images/beige-1.png";
 import BoxyShapes from "../content/images/boxyshapes-1.png";
 
@@ -118,12 +120,39 @@ const IndexPage = () => {
       {/* Playground List */}
       <div className="py-[100px] lg:px-[100px] px-[40px]">
         <p className="monospace text-[20px] font-bold mb-[80px]">
-          Upcoming and Internal Projects <sup>03</sup>
+          Something from the Sandbox <sup>03</sup>
         </p>
-        <div className="grid lg:grid-cols-3">
-          <div className="bg-white lg:mb-[0px] mb-[30px] lg:mr-[50px] rounded-t-[200px] rounded-b-[20px] h-[450px]"></div>
-          <div className="bg-white lg:mb-[0px] mb-[30px] lg:mr-[50px] rounded-b-[200px] rounded-t-[20px] h-[450px]"></div>
-          <div className="bg-white lg:mb-[0px] mb-[30px] lg:mr-[50px] rounded-t-[200px] rounded-b-[20px] h-[450px]"></div>
+        <div className="grid lg:grid-cols-3 lg:justify-between justify-center">
+          {/* Etc 1 */}
+          <div className="bg-[#CDDE91] lg:mb-[0px] mb-[30px] rounded-t-[200px] rounded-b-[20px] w-[350px] h-[450px]">
+            <div className="overflow-hidden bg-[#8F8F8F] border border-[black] rounded-t-[200px] rounded-b-[15px] w-[320px] h-[420px] m-[15px]">
+              <img
+                className="object-cover h-full w-full"
+                alt="img"
+                src={Beige}
+              />
+            </div>
+          </div>
+          {/* Etc 2 */}
+          <div className="bg-[#8F8F8F] lg:mb-[0px] mb-[30px] rounded-b-[200px] rounded-t-[20px] w-[350px] h-[450px]">
+            <div className="overflow-hidden bg-[#8F8F8F] border border-[black] rounded-b-[200px] rounded-t-[15px] w-[320px] h-[420px] m-[15px]">
+              <img
+                className="object-cover h-full w-full"
+                alt="img"
+                src={Beige}
+              />
+            </div>
+          </div>
+          {/* Etc 3 */}
+          <div className="bg-[#CDDE91] lg:mb-[0px] mb-[30px] rounded-t-[200px] rounded-b-[20px] w-[350px] h-[450px]">
+            <div className="overflow-hidden bg-[#8F8F8F] border border-[#171717] rounded-t-[200px] rounded-b-[15px] w-[320px] h-[420px] m-[15px]">
+              <img
+                className="object-cover h-full w-full"
+                alt="img"
+                src={Beige}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
