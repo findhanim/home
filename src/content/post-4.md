@@ -16,8 +16,8 @@ technologies:
   - tool: Vuforia
 
 featuredImages:
-  - image: images/boxyshapes-1.png
-  - image: images/boxyshapes-2.png
-  - image: images/boxyshapes-3.png
-  - image: images/boxyshapes-4.png
+  - image: images/boxyshapes/boxyshapes-1.png
+  - image: images/boxyshapes/boxyshapes-2.png
+  - image: images/boxyshapes/boxyshapes-3.png
+  - image: images/boxyshapes/boxyshapes-4.png
 ---
