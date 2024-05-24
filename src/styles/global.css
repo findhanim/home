@@ -8,6 +8,11 @@ body {
   font-family: "Archivo";
 }
 
+/* Scroll to Top */
+.top-button {
+  cursor: pointer;
+}
+
 /* Global Styling */
 .monospace {
   font-family: "Space Mono";

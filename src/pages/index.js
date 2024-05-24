@@ -2,8 +2,8 @@ import * as React from "react";
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 import { Link } from "gatsby";
-import shot1 from "../content/images/beige-1.png";
 import Prisma from "../content/images/prisma-0.png";
+import Retro from "../content/images/retrospective-0.png";
 import Beige from "../content/images/beige-1.png";
 import BoxyShapes from "../content/images/boxyshapes-1.png";
 
@@ -68,7 +68,7 @@ const IndexPage = () => {
           <img
             className="project-hover hidden lg:block"
             alt="img"
-            src={shot1}
+            src={Retro}
           />
         </Link>
 
