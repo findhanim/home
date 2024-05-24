@@ -113,4 +113,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Hanim</title>
+export const Head = () => <title>Hanim J.</title>
