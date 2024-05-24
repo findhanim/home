@@ -27,15 +27,12 @@ export default function BlogPostTemplate({
         {/* Hello */}
         <div className="col-span-2"></div>
         <div className="lg:col-span-8">
-          {/* <p className="serif text-[28px] text-[#CDDE91] font-light pb-[50px] font-bold uppercase">
-            {frontmatter.title}
-          </p> */}
           <p
             data-aos="fade-up"
             data-aos-duration="800"
             className="text-[28px] font-light"
           >
-            {frontmatter.title}{" "}{frontmatter.description}
+            {frontmatter.title} {frontmatter.description}
           </p>
 
           {/* Roles */}
@@ -65,6 +62,24 @@ export default function BlogPostTemplate({
               ))}
             </p>
           </div>
+
+          {frontmatter.url ? (
+            <div
+              className="mt-[50px]"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="800"
+            >
+              <a
+                href={frontmatter.url}
+                target="_blank"
+                rel="noreferrer"
+                className="py-[12px] px-[40px] border rounded-[50px] text-[12px] uppercase hover:bg-gradient-to-r from-white to-[#CDDE90] hover:text-black hover:border-black font-bold"
+              >
+                {frontmatter.button}
+              </a>
+            </div>
+          ) : null}
         </div>
 
         <div className="col-span-2"></div>
@@ -95,9 +110,10 @@ export const pageQuery = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         slug
         title
+        url
+        button
         description
         contributions {
           role
@@ -115,4 +131,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export const Head = () => <title>Hanim J.</title>
+export const Head = () => <title>Hanim J.</title>;
