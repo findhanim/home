@@ -1,7 +1,9 @@
 ---
-slug: "/one"
-title: "Daily UI Challenges"
+slug: "/prisma"
+title: "Prisma"
 description: "Daily UI prompts are designed to challenge participants to think creatively and improve design skills in areas such as typography, color theory, layout, and user experience design."
+url: "http://prisma-beta.celcom.com.my"
+button: "View Live Site"
 
 contributions:
   - role: Conceptual Design
