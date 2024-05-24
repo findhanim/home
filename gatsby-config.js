@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/findhanim`,
+  pathPrefix: `/home`,
 
   plugins: [
     {
