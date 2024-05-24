@@ -1,12 +1,38 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 
-export default function Footer({ children }) {
+const Footer = ({ showBelow }) => {
+  const [show, setShow] = useState(showBelow ? false : true);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > showBelow) {
+      if (!show) setShow(true);
+    } else {
+      if (show) setShow(false);
+    }
+  };
+
+  const handleClick = () => {
+    window[`scrollTo`]({ top: 0, behavior: `smooth` });
+  };
+
+  useEffect(() => {
+    if (showBelow) {
+      window.addEventListener(`scroll`, handleScroll);
+      return () => window.removeEventListener(`scroll`, handleScroll);
+    }
+  });
+
   return (
     <main className="grid lg:grid-cols-2 py-[100px] lg:px-[100px] px-[40px]">
       {/* Back To Top */}
       <div className="mb-[70px]">
-        <div className="hidden lg:block bg-[#222] w-[200px] h-[200px] rounded-[200px]">
-          <p className="text-[#CDDE91] -rotate-90 pl-[40px] pt-[5px] text-[100px]">
+        <div className="top-button hidden lg:block bg-[#222] w-[200px] h-[200px] rounded-[200px]">
+          <p
+            onClick={handleClick}
+            aria-label="to top"
+            component="span"
+            className="text-[#CDDE91] -rotate-90 pl-[40px] pt-[5px] text-[100px]"
+          >
             &#10170;
           </p>
         </div>
@@ -15,22 +41,57 @@ export default function Footer({ children }) {
       {/* Contact */}
       <div>
         <p className="text-[28px] font-light">
-          Let's collaborate if you want to include sprinkles of magic and 
-          wizardry into your upcoming project.
+          Let's collaborate if you want sprinkles of magic and wizardry in your
+          upcoming project.
         </p>
         {/* Email */}
-        <p className="monospace text-[12px] uppercase mt-[70px]">Email Me</p>
-        <a href="mailto:>work.nazreenhanim@gmail.com" className="text-[20px] mt-[6px]">work.nazreenhanim@gmail.com</a>
+        <p className="monospace text-[#CDDE91] text-[12px] uppercase mt-[70px]">
+          Email Me
+        </p>
+        <a
+          href="mailto:>work.nazreenhanim@gmail.com"
+          className="text-[20px] mt-[6px]"
+        >
+          work.nazreenhanim@gmail.com
+        </a>
 
         {/* Email */}
-        <p className="monospace text-[12px] uppercase mt-[70px]">Find Me On</p>
+        <p className="monospace text-[#CDDE91] text-[12px] uppercase mt-[70px]">
+          Find Me On
+        </p>
         <p className="grid lg:grid-cols-4 grid-cols-2 text-[20px] mt-[6px]">
-          <a href="https://www.linkedin.com/in/nazreenhanim" target="_blank">LinkedIn</a>
-          <a href="https://codepen.io/nazreenhanim" target="_blank">Codepen</a>
-          <a href="https://dribbble.com/nazreenhanim" target="_blank">Dribbble</a>
-          <a href="https://www.behance.net/nazreenhanim" target="_blank">Behance</a>
+          <a
+            href="https://www.linkedin.com/in/nazreenhanim"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://codepen.io/nazreenhanim"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Codepen
+          </a>
+          <a
+            href="https://dribbble.com/nazreenhanim"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Dribbble
+          </a>
+          <a
+            href="https://www.behance.net/nazreenhanim"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Behance
+          </a>
         </p>
       </div>
     </main>
-  )
-}
+  );
+};
+
+export default Footer;
