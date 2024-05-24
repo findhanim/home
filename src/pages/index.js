@@ -1,10 +1,10 @@
-import * as React from 'react'
-import Footer from '../components/footer'
-import Navigation from '../components/navigation'
-import { Link } from 'gatsby'
-import shot1 from '../content/images/dui-1.png'
-import shot2 from '../content/images/beige-1.png'
-import shot3 from '../content/images/boxyshapes-1.png'
+import * as React from "react";
+import Footer from "../components/footer";
+import Navigation from "../components/navigation";
+import { Link } from "gatsby";
+import shot1 from "../content/images/dui-1.png";
+import Beige from "../content/images/beige-1.png";
+import shot3 from "../content/images/boxyshapes-1.png";
 
 const IndexPage = () => {
   return (
@@ -29,11 +29,11 @@ const IndexPage = () => {
         <p className="monospace text-[20px] font-bold mb-[80px] lg:px-[100px] px-[40px]">
           Selected Projects Showcase <sup>03</sup>
         </p>
-        {/* Portfolio One */}
-        <Link to="/portfolio/one">
+        {/* Portfolio Prisma */}
+        <Link to="/portfolio/prisma">
           <div
             id="project-list"
-            className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+            className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
           >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Prisma</b>
@@ -42,7 +42,7 @@ const IndexPage = () => {
               Read more ➚
             </p>
           </div>
-          {/* Screenshot One */}
+          {/* Screenshot Prisma */}
           <img
             className="project-hover hidden lg:block"
             alt="img"
@@ -50,11 +50,11 @@ const IndexPage = () => {
           />
         </Link>
 
-        {/* Portfolio Two */}
-        <Link to="/portfolio/two">
+        {/* Portfolio Retro */}
+        <Link to="/portfolio/retrospective">
           <div
             id="project-list"
-            className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+            className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
           >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>Retrospective</b>
@@ -63,19 +63,40 @@ const IndexPage = () => {
               Read more ➚
             </p>
           </div>
-          {/* Screenshot Two */}
+          {/* Screenshot Retro */}
           <img
             className="project-hover hidden lg:block"
             alt="img"
-            src={shot2}
+            src={shot1}
           />
         </Link>
 
-        {/* Portfolio Three */}
-        <Link to="/portfolio/three">
+        {/* Portfolio Beige */}
+        <Link to="/portfolio/beige">
           <div
             id="project-list"
-            className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+            className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+          >
+            <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
+              <b>Beige</b>
+            </p>
+            <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
+              Read more ➚
+            </p>
+          </div>
+          {/* Screenshot Beige */}
+          <img
+            className="project-hover hidden lg:block"
+            alt="img"
+            src={Beige}
+          />
+        </Link>
+
+        {/* Portfolio BoxyShapes */}
+        <Link to="/portfolio/boxyshapes">
+          <div
+            id="project-list"
+            className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
           >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
               <b>BoxyShapes</b>
@@ -84,7 +105,7 @@ const IndexPage = () => {
               Read more ➚
             </p>
           </div>
-          {/* Screenshot Three */}
+          {/* Screenshot BoxyShapes */}
           <img
             className="project-hover hidden lg:block"
             alt="img"
@@ -108,9 +129,9 @@ const IndexPage = () => {
       {/* Footer */}
       <Footer></Footer>
     </main>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Hanim J.</title>
+export const Head = () => <title>Hanim J.</title>;
