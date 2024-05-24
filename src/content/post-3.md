@@ -14,4 +14,8 @@ technologies:
 
 featuredImages:
   - image: images/beige-1.png
+  - image: images/beige-2.png
+  - image: images/beige-3.png
+  - image: images/beige-4.png
+  - image: images/beige-5.png
 ---

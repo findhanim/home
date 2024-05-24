@@ -17,4 +17,7 @@ technologies:
 
 featuredImages:
   - image: images/boxyshapes-1.png
+  - image: images/boxyshapes-2.png
+  - image: images/boxyshapes-3.png
+  - image: images/boxyshapes-4.png
 ---
