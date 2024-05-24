@@ -1,16 +1,20 @@
 ---
 slug: "/prisma"
 title: "Prisma"
-description: "Daily UI prompts are designed to challenge participants to think creatively and improve design skills in areas such as typography, color theory, layout, and user experience design."
-url: ""
-button: ""
+description: "is a centralized hub for both designers and developers, to ensure consistency in design and branding across all projects."
+# url: "http://prisma-beta.celcom.com.my"
+# button: "View Live Site"
 
 contributions:
-  - role: Conceptual Design
   - role: UI/UX Design
+  - role: Design System Development
+  - role: Front End Development
 
 technologies:
   - tool: Adobe XD
+  - tool: Gatsby JS
+  - tool: Bootstrap
+  - tool: Animate CSS
 
 featuredImages:
   - image: images/prisma-1.png

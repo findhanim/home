@@ -3,10 +3,11 @@ slug: "/beige"
 title: "Beige"
 description: "gives off a minimal and youthful look, which would be a great choice for Tumblr users who want to showcase their content in a modern way that feels clean and fun."
 url: "https://www.behance.net/gallery/87799899/Beige"
-button: "Behance Documentation"
+button: "View on Behance"
 
 contributions:
-  - role: Responsive UI Design
+  - role: Concept Exploration
+  - role: UI Design
 
 technologies:
   - tool: Figma
