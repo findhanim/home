@@ -1,6 +1,6 @@
-import * as React from 'react'
-import Footer from '../components/footer'
-import Navigation from '../components/navigation'
+import * as React from "react";
+import Footer from "../components/footer";
+import Navigation from "../components/navigation";
 
 const AboutPage = () => {
   return (
@@ -127,9 +127,9 @@ const AboutPage = () => {
       {/* Footer */}
       <Footer></Footer>
     </main>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
 
-export const Head = () => <title>Hanim J.</title>
+export const Head = () => <title>Hanim J.</title>;
