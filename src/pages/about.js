@@ -11,7 +11,7 @@ const AboutPage = () => {
       {/* Header */}
       <div className="grid lg:grid-cols-12 lg:pt-[50px] py-[100px] lg:px-[100px] px-[40px] flex items-center">
         {/* Smiley */}
-        <span className="absolute lg:block hidden text-[#CDDE91] text-[100px] rotate-45 mt-[-420px] ml-[-40px]">
+        <span className="absolute lg:block hidden text-[#CDDE91] text-[100px] rotate-45 mt-[-450px] ml-[-40px]">
           &#9786;
         </span>
 
