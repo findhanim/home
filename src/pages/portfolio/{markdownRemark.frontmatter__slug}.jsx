@@ -35,7 +35,7 @@ export default function BlogPostTemplate({
             data-aos-duration="800"
             className="text-[28px] font-light"
           >
-            {frontmatter.description}
+            {frontmatter.title}{" "}{frontmatter.description}
           </p>
 
           {/* Roles */}
@@ -114,3 +114,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = () => <title>Hanim J.</title>
