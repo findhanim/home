@@ -2,8 +2,8 @@ import * as React from "react";
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 import { Link } from "gatsby";
-import shot1 from "../content/images/dui-1.png";
-import Beige from "../content/images/beige-1.png";
+import shot1 from "../content/images/beige/beige-1.png";
+import Beige from "../content/images/beige/beige-1.png";
 import shot3 from "../content/images/boxyshapes-1.png";
 
 const IndexPage = () => {

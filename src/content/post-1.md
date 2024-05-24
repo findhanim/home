@@ -13,8 +13,8 @@ technologies:
   - tool: Adobe XD
 
 featuredImages:
-  - image: images/dui-1.png
-  - image: images/dui-2.png
-  - image: images/dui-3.png
-  - image: images/dui-4.png
+  - image: images/beige/beige-1.png
+  - image: images/beige/beige-2.png
+  - image: images/beige/beige-3.png
+  - image: images/beige/beige-4.png
 ---

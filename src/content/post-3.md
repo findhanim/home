@@ -17,5 +17,4 @@ featuredImages:
   - image: images/beige/beige-2.png
   - image: images/beige/beige-3.png
   - image: images/beige/beige-4.png
-  - image: images/beige/beige-5.png
 ---
