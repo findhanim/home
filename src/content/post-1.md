@@ -13,8 +13,8 @@ technologies:
   - tool: Adobe XD
 
 featuredImages:
-  - image: images/prisma/prisma-1.png
-  - image: images/prisma/prisma-2.png
-  - image: images/prisma/prisma-3.png
-  - image: images/prisma/prisma-4.png
+  - image: images/dui-1.png
+  - image: images/dui-2.png
+  - image: images/dui-3.png
+  - image: images/dui-4.png
 ---
