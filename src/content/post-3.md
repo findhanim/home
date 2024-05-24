@@ -1,4 +1,4 @@
- ---
+---
 slug: "/beige"
 title: "Beige"
 description: "gives off a minimal and youthful look, which would be a great choice for Tumblr users who want to showcase their content in a modern way that feels clean and fun."
