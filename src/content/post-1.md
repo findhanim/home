@@ -13,8 +13,5 @@ technologies:
   - tool: Adobe XD
 
 featuredImages:
-  - image: images/beige/beige-1.png
-  - image: images/beige/beige-2.png
-  - image: images/beige/beige-3.png
-  - image: images/beige/beige-4.png
+  - image: images/beige-1.png
 ---
