@@ -1,8 +1,9 @@
 ---
-slug: "/two"
-date: "2022-11-24"
-title: "Beige"
+slug: "/retrospective"
+title: "Retrospective"
 description: "Beige gives off a minimal and youthful look, which would be a great choice for Tumblr users who want to showcase their content in a modern way that feels clean and fun."
+url: ""
+button: ""
 
 contributions:
   - role: Responsive UI Design
