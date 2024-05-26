@@ -14,10 +14,10 @@ export default function Navigation({ children }) {
         id="link"
         className="flex justify-between col-span-3 rounded-bl-[30px] bg-white py-[20px] lg:px-[80px] px-[50px] text-black text-[12px] font-bold monospace uppercase"
       >
-        <a href="/#portfolio" data-replace="Portfolio">
+        <a href="/home/#portfolio" data-replace="Portfolio">
           <span>Portfolio</span>
         </a>
-        <a href="/about" data-replace="About">
+        <a href="/home/about" data-replace="About">
           <span>About</span>
         </a>
       </div>
