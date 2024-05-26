@@ -59,34 +59,41 @@ const Footer = ({ showBelow }) => {
         <p className="monospace text-[#CDDE91] text-[12px] uppercase mt-[70px]">
           Find Me On
         </p>
-        <p className="grid lg:grid-cols-4 grid-cols-2 text-[20px] mt-[6px]">
+        <p
+          id="link"
+          className="grid lg:grid-cols-4 grid-cols-2 text-[20px] mt-[6px]"
+        >
           <a
             href="https://www.linkedin.com/in/nazreenhanim"
             target="_blank"
             rel="noreferrer"
+            data-replace="LinkedIn"
           >
-            LinkedIn
+            <span>LinkedIn</span>
           </a>
           <a
             href="https://codepen.io/nazreenhanim"
             target="_blank"
             rel="noreferrer"
+            data-replace="Codepen"
           >
-            Codepen
+            <span>Codepen</span>
           </a>
           <a
             href="https://dribbble.com/nazreenhanim"
             target="_blank"
             rel="noreferrer"
+            data-replace="Dribbble"
           >
-            Dribbble
+            <span>Dribbble</span>
           </a>
           <a
             href="https://www.behance.net/nazreenhanim"
             target="_blank"
             rel="noreferrer"
+            data-replace="Behance"
           >
-            Behance
+            <span>Behance</span>
           </a>
         </p>
       </div>
