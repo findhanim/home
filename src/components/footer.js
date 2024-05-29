@@ -36,11 +36,11 @@ const Footer = ({ showBelow }) => {
         </p>
         <p id="link">
           <a
-            href="mailto:>work.nazreenhanim@gmail.com"
+            href="mailto:work.nazreenhanim@gmail.com"
             className="text-[20px] mt-[6px]"
             data-replace="work.nazreenhanim@gmail.com"
           >
-            <span> work.nazreenhanim@gmail.com</span>
+            <span>work.nazreenhanim@gmail.com</span>
           </a>
         </p>
 
