@@ -2,17 +2,18 @@
 slug: "/prisma"
 title: "Prisma"
 description: "is a centralized hub for both designers and developers, to ensure consistency in design and branding across all projects."
-# url: "http://prisma-beta.celcom.com.my"
-# button: "View Live Site"
+url: "http://prisma-beta.celcom.com.my"
+button: "View Live Site"
 
 contributions:
-  - role: UI/UX Design
+  - role: Concept Exploration
+  - role: UI/UX + Prototyping
   - role: Design System Development
   - role: Front End Development
 
 technologies:
   - tool: Adobe XD
-  - tool: Gatsby JS
+  - tool: Gatsby.js
   - tool: Bootstrap
   - tool: Animate CSS
 

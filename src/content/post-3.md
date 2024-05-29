@@ -1,22 +1,20 @@
 ---
-slug: "/beige"
-title: "Beige"
-description: "gives off a minimal and youthful look, which would be a great choice for Tumblr users who want to showcase their content in a modern way that feels clean and fun."
-url: "https://www.behance.net/gallery/87799899/Beige"
-button: "View on Behance"
+slug: "/Pryce"
+title: "Pryce"
+description: "app showcases comprehensive device plans along with detailed pricing information, providing users with clear and concise options."
+# url: ""
+# button: ""
 
 contributions:
   - role: Concept Exploration
-  - role: UI Design
+  - role: UI/UX + Prototyping
+  - role: Front End Development
 
 technologies:
-  - tool: Figma
-  - tool: Tumblr
+  - tool: Adobe XD
+  - tool: Tailwind
+  - tool: Next.js
 
 featuredImages:
   - image: images/beige-1.png
-  - image: images/beige-2.png
-  - image: images/beige-3.png
-  - image: images/beige-4.png
-  - image: images/beige-5.png
 ---

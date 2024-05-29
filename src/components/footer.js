@@ -24,20 +24,6 @@ const Footer = ({ showBelow }) => {
 
   return (
     <main className="grid lg:grid-cols-2 py-[100px] lg:px-[100px] px-[40px]">
-      {/* Back To Top */}
-      <div className="mb-[70px]">
-        <div className="top-button hidden lg:block bg-[#222] w-[200px] h-[200px] rounded-[200px]">
-          <p
-            onClick={handleClick}
-            aria-label="to top"
-            component="span"
-            className="text-[#CDDE91] -rotate-90 pl-[40px] pt-[5px] text-[100px]"
-          >
-            &#10170;
-          </p>
-        </div>
-      </div>
-
       {/* Contact */}
       <div>
         <p className="text-[28px] font-light">
@@ -48,12 +34,15 @@ const Footer = ({ showBelow }) => {
         <p className="monospace text-[#CDDE91] text-[12px] uppercase mt-[70px]">
           Email Me
         </p>
-        <a
-          href="mailto:>work.nazreenhanim@gmail.com"
-          className="text-[20px] mt-[6px]"
-        >
-          work.nazreenhanim@gmail.com
-        </a>
+        <p id="link">
+          <a
+            href="mailto:>work.nazreenhanim@gmail.com"
+            className="text-[20px] mt-[6px]"
+            data-replace="work.nazreenhanim@gmail.com"
+          >
+            <span> work.nazreenhanim@gmail.com</span>
+          </a>
+        </p>
 
         {/* Email */}
         <p className="monospace text-[#CDDE91] text-[12px] uppercase mt-[70px]">
@@ -96,6 +85,19 @@ const Footer = ({ showBelow }) => {
             <span>Behance</span>
           </a>
         </p>
+      </div>
+      {/* Back To Top */}
+      <div className="mb-[70px] flex lg:justify-end lg:mt-[0px] mt-[80px]">
+        <div className="top-button bg-[#222] w-[200px] h-[200px] rounded-[200px]">
+          <p
+            onClick={handleClick}
+            aria-label="to top"
+            component="span"
+            className="text-[#CDDE91] -rotate-90 pl-[40px] pt-[5px] text-[100px]"
+          >
+            &#10170;
+          </p>
+        </div>
       </div>
     </main>
   );

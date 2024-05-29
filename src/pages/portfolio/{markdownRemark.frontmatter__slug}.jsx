@@ -3,14 +3,9 @@ import { graphql } from "gatsby";
 import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
 
-export default function BlogPostTemplate({
-  data,
-  // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
+export default function BlogPostTemplate({ data }) {
+  const { markdownRemark } = data;
   const { frontmatter } = markdownRemark;
-
-  console.log("HEREEEE", frontmatter);
 
   return (
     <main className="bg-black text-white">
@@ -18,25 +13,25 @@ export default function BlogPostTemplate({
       <Navigation></Navigation>
 
       {/* Smiley */}
-      <span className="absolute lg:block hidden text-[#CDDE91] text-[300px] -rotate-45 mt-[-80px] ml-[-30px]">
+      {/* <span className="absolute lg:block hidden text-[#CDDE91] text-[300px] -rotate-45 mt-[-80px] ml-[-30px]">
         ☺
-      </span>
+      </span> */}
 
       {/* Header */}
       <div className="grid lg:grid-cols-12 lg:pt-[180px] lg:pb-[200px] py-[100px] lg:px-[100px] px-[40px] flex items-center">
         {/* Hello */}
         <div className="col-span-2"></div>
-        <div className="lg:col-span-8">
-          <p
-            data-aos="fade-up"
-            data-aos-duration="800"
-            className="text-[28px] font-light"
-          >
+        <div
+          className="lg:col-span-8"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <p className="text-[28px] font-light">
             {frontmatter.title} {frontmatter.description}
           </p>
 
           {/* Roles */}
-          <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+          <div>
             <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[12px] uppercase">
               Contributions
             </p>
@@ -50,7 +45,7 @@ export default function BlogPostTemplate({
           </div>
 
           {/* Tools */}
-          <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+          <div>
             <p className="monospace mt-[40px] mb-[10px] text-[#CDDE91] text-[12px] uppercase">
               Tools and technologies
             </p>
@@ -64,12 +59,7 @@ export default function BlogPostTemplate({
           </div>
 
           {frontmatter.url ? (
-            <div
-              className="mt-[50px]"
-              data-aos="fade-up"
-              data-aos-delay="900"
-              data-aos-duration="800"
-            >
+            <div className="mt-[50px]">
               <a
                 href={frontmatter.url}
                 target="_blank"
@@ -87,7 +77,7 @@ export default function BlogPostTemplate({
 
       {/* Flower */}
       <span
-        id="flower"
+        //id="flower"
         className="absolute lg:block hidden text-[#CDDE91] text-[120px] -rotate-45 mt-[-200px] ml-[1200px]"
       >
         ❋

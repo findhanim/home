@@ -8,6 +8,7 @@ import Retro from "../content/images/retrospective-0.png";
 import Prisma from "../content/images/prisma-0.png";
 import Beige from "../content/images/beige-1.png";
 import BoxyShapes from "../content/images/boxyshapes-1.png";
+import Avatar from "../assets/me.jpg";
 
 const IndexPage = () => {
   return (
@@ -16,12 +17,36 @@ const IndexPage = () => {
       <Navigation></Navigation>
 
       {/* Header */}
-      <div
-        data-aos="flip-left"
-        data-aos-duration="800"
-        className="pt-[100px] pb-[150px] flex justify-center text-[#CDDE91] text-[300px]"
-      >
-        &#9786;
+      <div className="py-[180px] flex flex-col">
+        {/* Intro */}
+        <div className="flex justify-center">
+          <p className="monospace uppercase text-[#FFFFFF] lg:text-[24px] text-[18px]">
+            Hi, you can call me <i className="text-[#CDDE91]">{"["}</i>...Hanim
+            <i className="text-[#CDDE91]">{" ]"}</i>
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <p className="uppercase text-[#FFFFFF] lg:text-[80px] text-[42px] lg:mt-[0px] mt-[18px]">
+            A <i className="monospace font-bold text-[#CDDE91]">Technical</i>
+          </p>
+        </div>
+        <div className="flex justify-center lg:mt-[-30px]">
+          <p className="uppercase text-[#FFFFFF] lg:text-[80px] text-[42px]">
+            <b className="text-[#CDDE91]">Design</b> Thinker
+          </p>
+        </div>
+        {/* Avatar */}
+        {/* <div className="flex justify-center ">
+          <div className="w-[140px] h-[150px] bg-[#CDDE91] rounded-t-[120px] rounded-b-[10px]">
+            <div className="overflow-hidden col-span-3 w-[120px] h-[130px] bg-[#CDDE91] rounded-t-[150px] rounded-b-[10px] border border-[#171717] m-[10px]">
+              <img
+                className="object-cover h-full w-full"
+                alt="img"
+                src={Avatar}
+              />
+            </div>
+          </div>
+        </div> */}
       </div>
 
       {/* Projects Involved List */}
@@ -53,14 +78,14 @@ const IndexPage = () => {
           />
         </Link>
 
-        {/* Portfolio Retro */}
-        <Link to="/portfolio/retrospective">
+        {/* Portfolio Pryce */}
+        <Link to="/portfolio/next-gen">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
           >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
-              <b>Retrospective</b>
+              <b>Next-Gen</b>
             </p>
             <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
@@ -74,14 +99,14 @@ const IndexPage = () => {
           />
         </Link>
 
-        {/* Portfolio Beige */}
-        <Link to="/portfolio/beige">
+        {/* Portfolio Pryce */}
+        <Link to="/portfolio/pryce">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
           >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
-              <b>Beige</b>
+              <b>Pryce</b>
             </p>
             <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
@@ -96,13 +121,13 @@ const IndexPage = () => {
         </Link>
 
         {/* Portfolio BoxyShapes */}
-        <Link to="/portfolio/boxyshapes">
+        <Link to="/portfolio/beige">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
           >
             <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
-              <b>BoxyShapes</b>
+              <b>Beige</b>
             </p>
             <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
               Read more ➚
@@ -120,7 +145,7 @@ const IndexPage = () => {
       {/* Playground List */}
       <div className="py-[100px] lg:px-[100px] px-[40px]">
         <p className="monospace text-[20px] font-bold mb-[80px]">
-          Something from the Sandbox <sup>03</sup>
+          Concept Explorations <sup>03</sup>
         </p>
         <div className="grid lg:grid-cols-3 lg:justify-between justify-center">
           {/* Etc 1 */}

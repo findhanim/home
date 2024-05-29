@@ -1,128 +1,182 @@
 import * as React from "react";
+import { Link } from "gatsby";
 // Components
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 // Assets
-import Beige from "../assets/me.jpg";
+import Retro from "../content/images/retrospective-0.png";
+import Prisma from "../content/images/prisma-0.png";
+import Beige from "../content/images/beige-1.png";
+import BoxyShapes from "../content/images/boxyshapes-1.png";
+import Avatar from "../assets/me.jpg";
 
-const AboutPage = () => {
+const IndexPage = () => {
   return (
     <main className="bg-black text-white">
       {/* Navigation */}
       <Navigation></Navigation>
 
       {/* Header */}
-      <div className="grid lg:grid-cols-12 lg:pt-[50px] py-[100px] lg:px-[100px] px-[40px] flex items-center">
-        {/* Smiley */}
-        <span className="absolute lg:block hidden text-[#CDDE91] text-[100px] rotate-45 mt-[-450px] ml-[-40px]">
-          &#9786;
-        </span>
-
-        {/* Hello */}
-        <div className="lg:col-span-5 col-span-12 mt-[10px]">
-          <p className="monospace text-[12px] uppercase">Who am i again ?</p>
-          <p className="text-[40px] font-light pt-[30px] leading-[55px]">
-            A unicorn who's passionate in blending artistic vision with
-            innovative solution
+      <div className="py-[180px] flex flex-col">
+        {/* Intro */}
+        <div className="flex justify-center">
+          <p className="monospace uppercase text-[#FFFFFF] lg:text-[24px] text-[18px]">
+            Hi, you can call me <i className="text-[#CDDE91]">{"["}</i>...Hanim
+            <i className="text-[#CDDE91]">{" ]"}</i>
           </p>
-          <button className="mt-[32px] py-[12px] px-[40px] border rounded-[50px] text-[12px] uppercase hover:bg-gradient-to-r from-white to-[#CDDE90] hover:text-black hover:border-black font-bold">
-            Click For Resume
-          </button>
         </div>
-
-        <div className="col-span-2"></div>
-
-        {/* Experience */}
-        <div className="col-span-5 flex items-center lg:px-[0px] px-[40px]">
-          <div className="text-[400px] mt-[-60px] font-bold serif italic">
-            4
-          </div>
-          <div className="mt-[250px]">
-            <p className="text-[80px] italic font-bold">+</p>
-            <br />
-            <p className="mt-[-30px] text-[12px] monospace uppercase">
-              Years of experiences <br />
-              in the field
-            </p>
-          </div>
+        <div className="flex justify-center">
+          <p className="uppercase text-[#FFFFFF] lg:text-[80px] text-[42px] lg:mt-[0px] mt-[18px]">
+            A <i className="monospace font-bold text-[#CDDE91]">Technical</i>
+          </p>
         </div>
+        <div className="flex justify-center lg:mt-[-30px]">
+          <p className="uppercase text-[#FFFFFF] lg:text-[80px] text-[42px]">
+            <b className="text-[#CDDE91]">Design</b> Thinker
+          </p>
+        </div>
+        {/* Avatar */}
+        {/* <div className="flex justify-center ">
+          <div className="w-[140px] h-[150px] bg-[#CDDE91] rounded-t-[120px] rounded-b-[10px]">
+            <div className="overflow-hidden col-span-3 w-[120px] h-[130px] bg-[#CDDE91] rounded-t-[150px] rounded-b-[10px] border border-[#171717] m-[10px]">
+              <img
+                className="object-cover h-full w-full"
+                alt="img"
+                src={Avatar}
+              />
+            </div>
+          </div>
+        </div> */}
       </div>
-      {/* Intro Blurp */}
-      <div className="grid lg:grid-cols-12 lg:px-[100px] px-[40px] pb-[150px]">
-        <div className="col-span-3 w-[200px] h-[220px] bg-[#CDDE91] rounded-t-[120px] rounded-b-[10px]">
-          <div className="overflow-hidden col-span-3 w-[180px] h-[200px] bg-[#CDDE91] rounded-t-[150px] rounded-b-[10px] border border-[#171717] m-[10px]">
-            <img className="object-cover h-full w-full" alt="img" src={Beige} />
-          </div>
-        </div>
-        <div className="flex items-end lg:items-start col-span-3 monospace text-[12px] leading-[22px] uppercase">
-          A little blurp
-          <br /> regarding the latter
-        </div>
-        <div className="lg:mt-[0px] mt-[50px] col-span-6 text-[28px] leading-[44px] font-light">
-          2019, marks the year of me start delivering my skill set and versatile
-          services professionally, from conceptual ideation to production.
-          <br />
-          <br />
-          These days, i spend most of my 9 to 5 leading the design system
-          development for an on-going project, while actively contributed to the
-          front-end development and technical design thinking.
-        </div>
-      </div>
-      {/* Skills */}
-      <div className="bg-white text-black rounded-t-[40px] py-[100px] lg:px-[100px] px-[40px]">
-        {/* Flower */}
-        <span
-          id="flower2"
-          className="flex lg:block hidden justify-end absolute text-[#CDDE91] text-[280px] rotate-12 mt-[-280px] ml-[1030px]"
-        >
-          &#10042;
-        </span>
 
-        <p className="monospace text-[20px] font-bold mb-[80px]">
-          Skills In The Field <sup>03</sup>
+      {/* Projects Involved List */}
+      <div
+        id="portfolio"
+        className="bg-white text-black rounded-t-[40px] py-[100px]"
+      >
+        <p className="monospace text-[20px] font-bold mb-[80px] lg:px-[100px] px-[40px]">
+          Selected Projects Showcase <sup>03</sup>
         </p>
-        {/* Skill 1 */}
-        <div className="grid lg:grid-cols-2 border-t-2 py-[50px]">
-          <div className="text-[30px] pb-[20px] lg:py-[40px] font-semibold">
-            Design System Development
-          </div>
-          <div className="flex grid grid-cols-1 items-center justify-end">
-            <i className="text-[12px] monospace uppercase mt-[10px] lg:mt-[0px]">
-              Tools and technologies
-            </i>
-            <p className="text-[16px] leading-[24px mt-[12px] lg:mt-[-30px]">
-              Bootstrap, Tailwind, NativeBase, CSS, Animate.CSS,
+        {/* Portfolio Prisma */}
+        <Link to="/portfolio/prisma">
+          <div
+            id="project-list"
+            className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+          >
+            <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
+              <b>Prisma</b>
+            </p>
+            <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
+              Read more ➚
             </p>
           </div>
-        </div>
+          {/* Screenshot Prisma */}
+          <img
+            className="project-hover hidden lg:block"
+            alt="img"
+            src={Prisma}
+          />
+        </Link>
 
-        {/* Skill 2 */}
-        <div className="grid lg:grid-cols-2 border-y-2 py-[50px]">
-          <div className="text-[30px] pb-[20px] lg:py-[40px] font-semibold">
-            Front End Development
-          </div>
-          <div className="flex grid grid-cols-1 items-center justify-end">
-            <i className="text-[12px] monospace uppercase mt-[10px] lg:mt-[0px]">
-              Tools and technologies
-            </i>
-            <p className="text-[16px] leading-[24px mt-[12px] lg:mt-[-30px]">
-              GatsbyJS, Angular, React Native, HTML, JavaScript
+        {/* Portfolio Pryce */}
+        <Link to="/portfolio/next-gen">
+          <div
+            id="project-list"
+            className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+          >
+            <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
+              <b>Next-Gen</b>
+            </p>
+            <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
+              Read more ➚
             </p>
           </div>
-        </div>
+          {/* Screenshot Retro */}
+          <img
+            className="project-hover hidden lg:block"
+            alt="img"
+            src={Retro}
+          />
+        </Link>
 
-        {/* Skill 3 */}
-        <div className="grid lg:grid-cols-2 border-b-2 py-[50px]">
-          <div className="text-[30px] pb-[20px] lg:py-[40px] font-semibold">
-            UI/UX Design
-          </div>
-          <div className="flex grid grid-cols-1 items-center justify-end">
-            <i className="text-[12px] monospace uppercase mt-[10px] lg:mt-[0px]">
-              Tools and technologies
-            </i>
-            <p className="text-[16px] leading-[24px mt-[12px] lg:mt-[-30px]">
-              Figma, Adobe XD, WordPress, Photoshop, Illustrator
+        {/* Portfolio Pryce */}
+        <Link to="/portfolio/pryce">
+          <div
+            id="project-list"
+            className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+          >
+            <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
+              <b>Pryce</b>
             </p>
+            <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
+              Read more ➚
+            </p>
+          </div>
+          {/* Screenshot Beige */}
+          <img
+            className="project-hover hidden lg:block"
+            alt="img"
+            src={Beige}
+          />
+        </Link>
+
+        {/* Portfolio BoxyShapes */}
+        <Link to="/portfolio/beige">
+          <div
+            id="project-list"
+            className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
+          >
+            <p className="flex text-[30px] lg:text-[40px] uppercase py-[50px] lg:py-[70px]">
+              <b>Beige</b>
+            </p>
+            <p className="hidden lg:flex flex items-center justify-end monospace text-[12px] font-bold uppercase">
+              Read more ➚
+            </p>
+          </div>
+          {/* Screenshot BoxyShapes */}
+          <img
+            className="project-hover hidden lg:block"
+            alt="img"
+            src={BoxyShapes}
+          />
+        </Link>
+      </div>
+
+      {/* Playground List */}
+      <div className="py-[100px] lg:px-[100px] px-[40px]">
+        <p className="monospace text-[20px] font-bold mb-[80px]">
+          Concept Explorations <sup>03</sup>
+        </p>
+        <div className="grid lg:grid-cols-3 lg:justify-between justify-center">
+          {/* Etc 1 */}
+          <div className="bg-[#CDDE91] lg:mb-[0px] mb-[30px] rounded-t-[200px] rounded-b-[20px] w-[350px] h-[450px]">
+            <div className="overflow-hidden bg-[#8F8F8F] border border-[black] rounded-t-[200px] rounded-b-[15px] w-[320px] h-[420px] m-[15px]">
+              <img
+                className="object-cover h-full w-full"
+                alt="img"
+                src={Beige}
+              />
+            </div>
+          </div>
+          {/* Etc 2 */}
+          <div className="bg-[#8F8F8F] lg:mb-[0px] mb-[30px] rounded-b-[200px] rounded-t-[20px] w-[350px] h-[450px]">
+            <div className="overflow-hidden bg-[#8F8F8F] border border-[black] rounded-b-[200px] rounded-t-[15px] w-[320px] h-[420px] m-[15px]">
+              <img
+                className="object-cover h-full w-full"
+                alt="img"
+                src={Beige}
+              />
+            </div>
+          </div>
+          {/* Etc 3 */}
+          <div className="bg-[#CDDE91] lg:mb-[0px] mb-[30px] rounded-t-[200px] rounded-b-[20px] w-[350px] h-[450px]">
+            <div className="overflow-hidden bg-[#8F8F8F] border border-[#171717] rounded-t-[200px] rounded-b-[15px] w-[320px] h-[420px] m-[15px]">
+              <img
+                className="object-cover h-full w-full"
+                alt="img"
+                src={Beige}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -133,6 +187,6 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default IndexPage;
 
 export const Head = () => <title>Hanim J.</title>;
