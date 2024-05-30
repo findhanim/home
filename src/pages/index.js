@@ -86,7 +86,7 @@ const IndexPage = () => {
         {/* </Link> */}
 
         {/* Portfolio Prisma */}
-        <a href="/portfolio/prisma" target="_blank" rel="noreferrer">
+        <a href="/home/portfolio/prisma" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -107,7 +107,7 @@ const IndexPage = () => {
         </a>
 
         {/* Portfolio Pryce */}
-        <a href="/portfolio/pryce" target="_blank" rel="noreferrer">
+        <a href="/home/portfolio/pryce" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -128,7 +128,7 @@ const IndexPage = () => {
         </a>
 
         {/* Portfolio We@Celcom */}
-        <a href="/portfolio/we-celcom" target="_blank" rel="noreferrer">
+        <a href="/home/portfolio/we-celcom" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -149,7 +149,7 @@ const IndexPage = () => {
         </a>
 
         {/* Portfolio Beige */}
-        <a href="/portfolio/beige" target="_blank" rel="noreferrer">
+        <a href="/home/portfolio/beige" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -170,7 +170,7 @@ const IndexPage = () => {
         </a>
 
         {/* Portfolio BoxyShapes */}
-        <a href="/portfolio/boxyshapes" target="_blank" rel="noreferrer">
+        <a href="/home/portfolio/boxyshapes" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
