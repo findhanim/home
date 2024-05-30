@@ -23,8 +23,8 @@ export default function BlogPostTemplate({ data }) {
         <div className="col-span-2"></div>
         <div
           className="lg:col-span-8"
-          data-aos="fade-right"
-          data-aos-duration="800"
+          // data-aos="fade-right"
+          // data-aos-duration="800"
         >
           <p className="text-[28px] font-light">
             {frontmatter.title} {frontmatter.description}
