@@ -21,14 +21,12 @@ const AboutPage = () => {
             A unicorn who's passionate in blending artistic vision with
             innovative solution
           </p>
-          <p className="mt-[32px]">
-            <a
-              href={Resume}
-              className="py-[12px] px-[40px] border rounded-[50px] text-[12px] uppercase hover:bg-gradient-to-r from-white to-[#CDDE90] hover:text-black hover:border-black font-bold"
-            >
-              Click For Resume
-            </a>
-          </p>
+          {/* <button
+            href={Resume}
+            className="mt-[32px] py-[12px] px-[40px] border rounded-[50px] text-[12px] uppercase hover:bg-gradient-to-r from-white to-[#CDDE90] hover:text-black hover:border-black font-bold"
+          >
+            Click For Resume
+          </button> */}
         </div>
 
         <div className="col-span-2"></div>

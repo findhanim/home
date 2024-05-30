@@ -56,7 +56,7 @@ const IndexPage = () => {
         className="bg-white text-black rounded-t-[40px] py-[100px]"
       >
         <p className="monospace text-[20px] font-bold mb-[80px] lg:px-[100px] px-[40px]">
-          Selected Projects Showcase <sup>03</sup>
+          Selected Projects Showcase <sup>05</sup>
         </p>
         {/* Portfolio Next-Gen */}
         {/* <Link to="#"> */}
