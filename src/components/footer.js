@@ -36,11 +36,11 @@ const Footer = ({ showBelow }) => {
         </p>
         <p id="link">
           <a
-            href="mailto:work.nazreenhanim@gmail.com"
+            href="mailto:>work.nazreenhanim@gmail.com"
             className="text-[20px] mt-[6px]"
             data-replace="work.nazreenhanim@gmail.com"
           >
-            <span>work.nazreenhanim@gmail.com</span>
+            <span> work.nazreenhanim@gmail.com</span>
           </a>
         </p>
 
@@ -61,14 +61,6 @@ const Footer = ({ showBelow }) => {
             <span>LinkedIn</span>
           </a>
           <a
-            href="https://codepen.io/nazreenhanim"
-            target="_blank"
-            rel="noreferrer"
-            data-replace="Codepen"
-          >
-            <span>Codepen</span>
-          </a>
-          <a
             href="https://dribbble.com/nazreenhanim"
             target="_blank"
             rel="noreferrer"
@@ -83,6 +75,14 @@ const Footer = ({ showBelow }) => {
             data-replace="Behance"
           >
             <span>Behance</span>
+          </a>
+          <a
+            href="https://codepen.io/nazreenhanim"
+            target="_blank"
+            rel="noreferrer"
+            data-replace="Codepen"
+          >
+            <span>Codepen</span>
           </a>
         </p>
       </div>

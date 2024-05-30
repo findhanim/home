@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 // Assets
 import Beige from "../assets/me.jpg";
+import Resume from "../assets/Nazreen-Hanim.pdf";
 
 const AboutPage = () => {
   return (
@@ -20,9 +21,14 @@ const AboutPage = () => {
             A unicorn who's passionate in blending artistic vision with
             innovative solution
           </p>
-          <button className="mt-[32px] py-[12px] px-[40px] border rounded-[50px] text-[12px] uppercase hover:bg-gradient-to-r from-white to-[#CDDE90] hover:text-black hover:border-black font-bold">
-            Click For Resume
-          </button>
+          <p className="mt-[32px]">
+            <a
+              href={Resume}
+              className="py-[12px] px-[40px] border rounded-[50px] text-[12px] uppercase hover:bg-gradient-to-r from-white to-[#CDDE90] hover:text-black hover:border-black font-bold"
+            >
+              Click For Resume
+            </a>
+          </p>
         </div>
 
         <div className="col-span-2"></div>
@@ -67,7 +73,7 @@ const AboutPage = () => {
       <div className="bg-white text-black rounded-t-[40px] py-[100px] lg:px-[100px] px-[40px]">
         {/* Flower */}
         <span
-          id="flower2"
+          // id="flower2"
           className="flex lg:block hidden justify-end absolute text-[#CDDE91] text-[280px] rotate-12 mt-[-280px] ml-[1030px]"
         >
           &#10042;
