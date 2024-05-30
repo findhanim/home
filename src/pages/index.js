@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 // Components
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
@@ -56,7 +55,7 @@ const IndexPage = () => {
         className="bg-white text-black rounded-t-[40px] py-[100px]"
       >
         <p className="monospace text-[20px] font-bold mb-[80px] lg:px-[100px] px-[40px]">
-          Selected Projects Showcase <sup>05</sup>
+          Selected Projects Showcase <sup>06</sup>
         </p>
         {/* Portfolio Next-Gen */}
         {/* <Link to="#"> */}
@@ -87,7 +86,7 @@ const IndexPage = () => {
         {/* </Link> */}
 
         {/* Portfolio Prisma */}
-        <Link to="/portfolio/prisma">
+        <a href="/portfolio/prisma" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -105,10 +104,10 @@ const IndexPage = () => {
             alt="img"
             src={Prisma}
           />
-        </Link>
+        </a>
 
         {/* Portfolio Pryce */}
-        <Link to="/portfolio/pryce">
+        <a href="/portfolio/pryce" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -126,10 +125,10 @@ const IndexPage = () => {
             alt="img"
             src={Pryce}
           />
-        </Link>
+        </a>
 
         {/* Portfolio We@Celcom */}
-        <Link to="/portfolio/we-celcom">
+        <a href="/portfolio/we-celcom" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-t border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -147,10 +146,10 @@ const IndexPage = () => {
             alt="img"
             src={WeCelcom}
           />
-        </Link>
+        </a>
 
         {/* Portfolio Beige */}
-        <Link to="/portfolio/beige">
+        <a href="/portfolio/beige" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-y border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -168,10 +167,10 @@ const IndexPage = () => {
             alt="img"
             src={Beige}
           />
-        </Link>
+        </a>
 
         {/* Portfolio BoxyShapes */}
-        <Link to="/portfolio/boxyshapes">
+        <a href="/portfolio/boxyshapes" target="_blank" rel="noreferrer">
           <div
             id="project-list"
             className="grid lg:grid-cols-2 border-b border-[#bbb] lg:px-[100px] px-[40px] hover:bg-gradient-to-r from-white to-[#CDDE90]"
@@ -189,7 +188,7 @@ const IndexPage = () => {
             alt="img"
             src={BoxyShapes}
           />
-        </Link>
+        </a>
       </div>
 
       {/* Playground List */}
