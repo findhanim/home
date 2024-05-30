@@ -4,7 +4,6 @@ import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 // Assets
 import Beige from "../assets/me.jpg";
-import Resume from "../assets/Nazreen-Hanim.pdf";
 
 const AboutPage = () => {
   return (
@@ -21,12 +20,6 @@ const AboutPage = () => {
             A unicorn who's passionate in blending artistic vision with
             innovative solution
           </p>
-          {/* <button
-            href={Resume}
-            className="mt-[32px] py-[12px] px-[40px] border rounded-[50px] text-[12px] uppercase hover:bg-gradient-to-r from-white to-[#CDDE90] hover:text-black hover:border-black font-bold"
-          >
-            Click For Resume
-          </button> */}
         </div>
 
         <div className="col-span-2"></div>
