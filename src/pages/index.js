@@ -48,7 +48,7 @@ const IndexPage = () => {
           <b>(Selected)</b> Project <i>Highlight</i>
         </div>
         <div className="img-hover lg:col-span-11 col-span-6 rounded-[10px]">
-          <a href="/portfolio/prisma">
+          <a href="/home/portfolio/prisma">
             <img alt="img" src={Prisma} />
           </a>
         </div>
@@ -140,7 +140,7 @@ const IndexPage = () => {
         {/* Prisma */}
         <div className="lg:pt-[50px] pt-[30px]">
           <div className="img-hover rounded-[10px]">
-            <a href="/portfolio/prisma">
+            <a href="/home/portfolio/prisma">
               <img alt="img" src={Prisma} />
             </a>
           </div>
@@ -158,7 +158,7 @@ const IndexPage = () => {
         {/* Pryce */}
         <div className="lg:pt-[100px] pt-[50px]">
           <div className="img-hover rounded-[10px]">
-            <a href="/portfolio/pryce">
+            <a href="/home/portfolio/pryce">
               <img alt="img" src={Pryce} />
             </a>
           </div>
@@ -177,7 +177,7 @@ const IndexPage = () => {
         {/* We@Celcom */}
         <div className="lg:pt-[100px] pt-[50px]">
           <div className="img-hover rounded-[10px]">
-            <a href="/portfolio/we-celcom">
+            <a href="/home/portfolio/we-celcom">
               <img alt="img" src={WeCelcom} />
             </a>
           </div>
@@ -196,7 +196,7 @@ const IndexPage = () => {
         {/* Beige */}
         <div className="lg:pt-[100px] pt-[50px]">
           <div className="img-hover rounded-[10px]">
-            <a href="/portfolio/beige">
+            <a href="/home/portfolio/beige">
               <img alt="img" src={Beige} />
             </a>
           </div>
@@ -215,7 +215,7 @@ const IndexPage = () => {
         {/* BoxyShapes */}
         <div className="lg:pt-[100px] pt-[50px]">
           <div className="img-hover rounded-[10px]">
-            <a href="/portfolio/boxyshapes">
+            <a href="/home/portfolio/boxyshapes">
               <img alt="img" src={BoxyShapes} />
             </a>
           </div>
