@@ -23,34 +23,46 @@ const Footer = ({ showBelow }) => {
   });
 
   return (
-    <main className="grid lg:grid-cols-2 py-[100px] lg:px-[100px] px-[40px]">
-      {/* Contact */}
-      <div>
-        <p className="text-[28px] font-light">
+    <main className="lg:pt-[150px] pt-[100px] pb-[40px] text-black lg:px-[60px] px-[24px]">
+      {/* Flower */}
+      <div className="flex justify-center lg:text-[100px] text-[60px] text-[#304CD2] lg:mb-[100px] mb-[50px]">
+        &#10045;
+      </div>
+      {/* Collab? */}
+      <div className="grid lg:grid-cols-12 grid-cols-6">
+        <div className="lg:col-span-6 col-span-6"></div>
+        <div className="lg:col-span-5 col-span-6 text-[18px] leading-[26px] uppercase lg:text-right">
           Let's collaborate if you want sprinkles of magic and wizardry in your
           upcoming project.
-        </p>
-        {/* Email */}
-        <p className="monospace text-[#CDDE91] text-[12px] uppercase mt-[70px]">
-          Email Me
-        </p>
-        <p id="link">
+        </div>
+      </div>
+      <div className="grid lg:grid-cols-12 grid-cols-6 lg:text-[22px] text-[18px] lg:mt-[100px] mt-[50px]">
+        <div className="lg:col-span-1"></div>
+        <div className="lg:col-span-10 col-span-6">Say hello at,</div>
+      </div>
+      {/* Email */}
+      <div className="grid lg:grid-cols-12 grid-cols-6 flex lg:justify-center lg:mb-[220px] mb-[100px]">
+        <div className="lg:col-span-1"></div>
+        <div className="lg:col-span-8 col-span-6 xl:text-[50px] md:text-[30px] text-[24px] font-medium">
           <a
-            href="mailto:>work.nazreenhanim@gmail.com"
-            className="text-[20px] mt-[6px]"
-            data-replace="work.nazreenhanim@gmail.com"
+            href="mailto:work.nazreenhanim@gmail.com"
+            className="border-b-[4px] border-[#304CD2] pb-[6px]"
           >
-            <span> work.nazreenhanim@gmail.com</span>
+            work.nazreenhanim<srf>@gmail.com</srf>
           </a>
-        </p>
-
-        {/* Email */}
-        <p className="monospace text-[#CDDE91] text-[12px] uppercase mt-[70px]">
-          Find Me On
-        </p>
-        <p
+        </div>
+        <div className="lg:col-span-1"></div>
+      </div>
+      {/* Credit */}
+      <div className="grid lg:grid-cols-12 md:grid-cols-8 grid-cols-6 text-[16px]">
+        <div className="lg:col-span-4 md:col-span-4 col-span-6 lg:mb-[0px] mb-[20px]">
+          Made with love by <b>HANIM</b>{" "}
+          <b className="text-[#304CD2]">&#9786;</b>
+        </div>
+        {/* Links */}
+        <div
           id="link"
-          className="grid lg:grid-cols-4 grid-cols-2 text-[20px] mt-[6px]"
+          className="lg:col-span-4 md:col-span-4 col-span-6 text-black flex justify-between"
         >
           <a
             href="https://www.linkedin.com/in/nazreenhanim"
@@ -84,19 +96,17 @@ const Footer = ({ showBelow }) => {
           >
             <span>Codepen</span>
           </a>
-        </p>
-      </div>
-      {/* Back To Top */}
-      <div className="mb-[70px] flex lg:justify-end lg:mt-[0px] mt-[80px]">
-        <div className="top-button bg-[#222] w-[200px] h-[200px] rounded-[200px]">
-          <p
+        </div>
+        {/* Top button */}
+        <div className="top-button lg:col-span-4 md:col-span-8 col-span-6 text-black flex justify-end lg:mt-[0px] mt-[50px]">
+          <span
             onClick={handleClick}
             aria-label="to top"
             component="span"
-            className="text-[#CDDE91] -rotate-90 pl-[40px] pt-[5px] text-[100px]"
+            className="border-b border-black pb-[4px]"
           >
-            &#10170;
-          </p>
+            Back to top &#8593;
+          </span>
         </div>
       </div>
     </main>

@@ -1,9 +1,14 @@
 ---
 slug: "/prisma"
 title: "Prisma"
+year: "2022"
 description: "is a centralized hub for both designers and developers, to ensure consistency in design and branding across all projects."
 url: "http://prisma-beta.celcom.com.my"
 button: "View Live Site"
+involvement: "From the early stages of brainstorming through design decisions, lo-fi testing and development, my involvement in the project was pivotal. These contributions significantly shaped the path, adding insights and skills crucial to its final production."
+
+headerImage:
+  - image: images/prisma-0.png
 
 contributions:
   - role: Concept Exploration

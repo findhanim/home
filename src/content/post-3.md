@@ -1,9 +1,12 @@
 ---
-slug: "/Pryce"
+slug: "/pryce"
 title: "Pryce"
+year: "2023"
 description: "app showcases comprehensive device plans for Celcom Bluecube and Digi Store visitors, along with detailed pricing information, providing users with clear and concise options."
-# url: ""
-# button: ""
+involvement: "From ideation concept to designing interfaces, development, and conducting in-store app testing. My input significantly shaped the project's direction, enhancing it with essential perspectives for its favorable outcome."
+
+headerImage:
+  - image: images/pryce-0.png
 
 contributions:
   - role: Concept Exploration
