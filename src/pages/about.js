@@ -24,7 +24,7 @@ const AboutPage = () => {
         <span className="heading font-medium lg:col-span-12 col-span-6 lg:my-[100px] mt-[60px] mb-[30px] lg:text-[80px] text-[40px]">
           Hi, I'm <b>Hanim</b> <b className="text-[#304CD2]">&#9786;</b>
         </span>
-        <div className="col-span-3 mb-[80px]">
+        <div className="lg:col-span-3 col-span-6 mb-[80px]">
           <a href={Resume} target="_blank" rel="noreferrer">
             <span className="text-[18px] font-medium uppercase border-b border-black pb-[4px]">
               Click For Resume
