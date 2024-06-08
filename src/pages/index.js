@@ -10,10 +10,6 @@ import Beige from "../content/images/beige-0.png";
 import BoxyShapes from "../content/images/boxyshapes-0.png";
 
 const IndexPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <main className="bg-[#F6F6F6] text-black">
       {/* Navigation */}
