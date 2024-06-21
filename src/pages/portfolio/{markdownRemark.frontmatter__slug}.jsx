@@ -131,7 +131,7 @@ export default function BlogPostTemplate({ data }) {
             <b>Other</b> <srf>Projects</srf>
           </span>
           <a
-            href="/home/portfolio/pryce"
+            href="/portfolio/pryce"
             className="lg:col-span-6 col-span-12 flex items-center lg:py-[50px] py-[30px] border-y border-[#BBBBBB]"
           >
             <span className="monospace font-bold text-[18px] mr-[80px]">
@@ -141,7 +141,7 @@ export default function BlogPostTemplate({ data }) {
             {/* Smiley */}
           </a>
           <a
-            href="/home/portfolio/we-celcom"
+            href="/portfolio/we-celcom"
             className="lg:col-span-6 col-span-12 flex items-center lg:py-[50px] py-[30px] lg:border-y border-b border-[#BBBBBB] lg:mt-[0px] mt-[-17px]"
           >
             <span className="monospace font-bold text-[18px] mr-[80px]">
@@ -152,7 +152,7 @@ export default function BlogPostTemplate({ data }) {
             </span>
           </a>
           <a
-            href="/home/portfolio/beige"
+            href="/portfolio/beige"
             className="lg:col-span-6 col-span-12 flex items-center lg:py-[50px] py-[30px] lg:border-b border-b border-[#BBBBBB] mt-[-17px]"
           >
             <span className="monospace font-bold text-[18px] mr-[80px]">
@@ -161,7 +161,7 @@ export default function BlogPostTemplate({ data }) {
             <span className="font-bold lg:text-[30px] text-[26px]">Beige</span>
           </a>
           <a
-            href="/home/portfolio/boxyshapes"
+            href="/portfolio/boxyshapes"
             className="lg:col-span-6 col-span-12 flex items-center lg:py-[50px] py-[30px] lg:border-b border-b border-[#BBBBBB] mt-[-17px]"
           >
             <span className="monospace font-bold text-[18px] mr-[80px]">
@@ -172,7 +172,7 @@ export default function BlogPostTemplate({ data }) {
             </span>
           </a>
           <a
-            href="/home/portfolio/prisma"
+            href="/portfolio/prisma"
             className="lg:col-span-6 col-span-12 flex items-center lg:py-[50px] py-[30px] lg:border-b border-b border-[#BBBBBB] mt-[-17px]"
           >
             <span className="monospace font-bold text-[18px] mr-[80px]">
